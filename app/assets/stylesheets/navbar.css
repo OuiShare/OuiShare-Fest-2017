@@ -1,0 +1,104 @@
+/* default navbar colors */
+.navbar-default {
+  background-color: #001e60;
+  .navbar-nav {
+    li a,
+    ul li a {
+      color: white;
+    }
+    ul,
+    ul li,
+    ul li a {
+      background-color: #001e60;
+    }
+  }
+}
+
+
+/* top transparent navbar */
+.navbar-solid {
+  /*background-color: #001e60 !important;*/
+  /*color:#FFF;*/
+  margin-top: 30px;
+  background-color: transparent !important;
+  color: #001e60;
+  padding: 0 !important;
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+}
+
+.navbar-solid .navbar-nav ul{
+  background-color: white !important;
+}
+.navbar-solid .navbar-nav ul li a {
+  color: #001e60 !important;
+}
+.navbar-solid .navbar-nav li a{
+  color: white !important;
+}
+
+.navbar-solid .navbar-nav ul li, 
+.navbar-solid .navbar-nav ul li a {
+  background-color: transparent !important;
+}
+.navbar-solid .navbar-nav ul li a:hover {
+  background-color: #001e60 !important;
+  color: white !important;
+}
+
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav ul li a:hover {
+  color: #001e60 !important;
+  background-color: white !important;
+}
+
+.navbar-default .navbar-nav .tickets-highlight .highlight,
+.navbar-solid .navbar-nav .tickets-highlight .highlight {
+  background-color: #001e60 !important;
+  color: white !important;
+}
+
+
+.navbar-default .navbar-nav .tickets-highlight .highlight:hover,
+.navbar-solid .navbar-nav .tickets-highlight .highlight:hover{
+  background-color: white !important;
+  color: #001e60 !important;
+}
+
+/* top background image for the blank_bg page tops to show transparent navbar */
+/*
+.top, .top_red {
+  background: url(/assets/top_red.png) no-repeat -40px -140px;
+}
+.top_blue {
+  background: url(/assets/top_blue.png) no-repeat 0 -40px;
+}
+*/
+/*.navbar-solid {
+  background-color: #000 !important;
+  padding: 0 !important;
+  transition: all 0.2s linear 0s;
+}*/
+
+/* navbar collapse breakpoint Bootstrap override, not working */
+@media (min-width: 1200px) {
+  .navbar-toggle {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: none;
+  }
+  .nav-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+
+li.dropdown .dropdown-submenu {
+  visibility: hidden;
+}
+li.dropdown:hover .dropdown-submenu {
+  visibility: visible;
+}

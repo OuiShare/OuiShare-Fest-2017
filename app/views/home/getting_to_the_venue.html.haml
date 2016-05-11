@@ -1,0 +1,138 @@
+.blank_bg.page
+  .container
+    .row.centered.travel_information
+      %h3.ouishare_stencil
+        = t('dynamic_translations.getting_venue.title')
+      %hr.pink
+
+    .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .row.travel_information
+        %h4
+          = t('dynamic_translations.getting_venue.public_transportation')
+        %p.text-center
+          %b
+            = t('dynamic_translations.getting_venue_underground.title')
+          %br
+          = t('dynamic_translations.getting_venue.underground_part_one')
+          %a{href: "http://www.ratp.fr/informer/pdf/orienter/f_plan.php?nompdf=metro_geo&loc=secteur&fm=pdf", target: "_blank"} 
+            = t('dynamic_translations.getting_venue_underground.link')
+          = t('dynamic_translations.getting_venue_underground.part_two')
+          %ul
+            %li
+              Porte de la Villette (Line 7)
+            %li
+              Porte de Pantin (Line 5)
+        %p.text-center
+          %b
+            = t('dynamic_translations.getting_venue_bus.title')
+          %br
+          = t('dynamic_translations.getting_venue_bus.part_one')
+          %ul
+            %li
+              Porte de Pantin: bus n°75
+            %li
+              Canal de l’Ourcq: bus n°60
+        %p.text-center
+          %b
+            = t('dynamic_translations.getting_venue_trams.title')
+          %br
+          = t('dynamic_translations.getting_venue_trams.part_one')
+          \:
+          = t('dynamic_translations.getting_venue_trams.part_two')
+        %p.text-center
+          %b
+            = t('dynamic_translations.getting_venue_bike.title')
+          %br
+          %a{href: "http://en.velib.paris.fr/How-it-works", target: "_blank"} 
+            Velib’ 
+          = t('dynamic_translations.getting_venue_bike.part_one')
+        %p.text-center
+          / %iframe{:allowtransparency => "true", :frameborder => "0", :height => "450", :hspace => "0", :marginheight => "5", :marginwidth => "5", :scrolling => "auto", :src => "hhttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.048944565693!2d2.390052115675687!3d48.89540437929112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dc9c9c1ba1d%3A0xc71151aa5c6aae51!2sCabaret+Sauvage!5e0!3m2!1sen!2sfr!4v1456741088180", :vspace => "0", :width => "100%"}
+          %a{href: "https://www.google.fr/maps/place/Cabaret+Sauvage/@48.8954079,2.3900521,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66dc9c9c1ba1d:0xc71151aa5c6aae51", target: "_blank"}
+            %img.img-responsive{:src => '/assets/access-cabaret-2016.png', :alt => 'OuiShare Fest location map'}
+
+
+    .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .row.travel_information
+        %h4
+          = t('dynamic_translations.getting_venue_taxi.title')
+        %p.text-center
+          = t('dynamic_translations.getting_venue_taxi.part_one')
+          %a{href: "http://taxifortwo.co.uk/", target: "_blank"} 
+            = t('dynamic_translations.getting_venue_taxi.link')
+
+
+    .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .row.travel_information
+        %h4
+          = t('dynamic_translations.getting_venue_airport.title')
+        %p.text-center
+          = t('dynamic_translations.getting_venue_airport.part_one')
+          %ol
+            %li
+              = t('dynamic_translations.getting_venue_airport.part_two')
+            %li
+              = t('dynamic_translations.getting_venue_airport.part_three')
+        %p.text-center
+          = t('dynamic_translations.getting_venue_airport.part_four')
+          %ol
+            %li
+              = t('dynamic_translations.getting_venue_airport.part_five')
+            %li
+              = t('dynamic_translations.getting_venue_airport.part_six')
+            %li
+              = t('dynamic_translations.getting_venue_airport.part_seven')
+
+    .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .row.travel_information
+        %h4
+          = t('dynamic_translations.getting_venue_car.title')
+        %p.text-center
+          %b
+            = t('dynamic_translations.getting_venue_car.part_one')
+          = t('dynamic_translations.getting_venue_car.part_two')
+          %a{href: "http://www.mobypark.com/", target: "_blank"}
+            Mobypark
+          or
+          %a{href: "http://www.monsieurparking.com/", target: "_blank"}
+            Monsieur Parking
+          \.
+        %p.text-center
+          %b
+            = t('dynamic_translations.getting_venue_car.part_three')
+          %br
+          = t('dynamic_translations.getting_venue_car.part_four')
+          %br
+        %p.text-center
+          %b
+            = t('dynamic_translations.getting_venue_car.part_five')
+          %ul
+            %li
+              = t('dynamic_translations.getting_venue_car.part_six')
+            %li
+              = t('dynamic_translations.getting_venue_car.part_seven')
+
+
+/ Join section
+.blank_bg.vspace
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.join.ready')
+    .row.centered
+      .col-md-6.col-md-offset-3
+        %br
+        %br
+        %p.centered
+          %img.img-responsive{alt: "Ready to join?", src: "assets/osf16-join.jpg"}/
+    .row.centered.btn-space
+      .col-md-12
+        .col-md-6.col-md-offset-3
+          %a{:href => 'join#eventbrite'}
+            %button.btn.btn-large.btn-primary
+              = t('dynamic_translations.reminder_ticket.getyourtickets')
+          
+
+
+
+

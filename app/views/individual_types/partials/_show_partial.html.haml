@@ -1,0 +1,11 @@
+%strong 
+  - if admin_panel      
+    = link_to new_individual_path(:is_checked => @individual_type.title) do
+      %i.glyphicon.glyphicon-plus-sign
+      Add a new individual to 
+  = @individual_type.title
+  group
+
+%hr/
+%br
+=render '/individuals/partials/individual_list', :individuals => @members, :admin_panel => true

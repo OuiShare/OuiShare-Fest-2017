@@ -1,0 +1,37 @@
+!!!
+%html.height-ref
+  %head
+    %title 
+      OuiShare Fest 2017
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = favicon_link_tag 'favicon/favicon.ico'
+    = csrf_meta_tags
+    %script{src: "http://maps.google.com/maps/api/js?sensor=false", type: "text/javascript"}
+    %meta{ name: 'description', content: "OuiShare Fest is an international event that gathers entrepreneurs and social innovators, non-profit and business leaders, grassroots activists and public officials each May in Paris." }
+    %meta{ name: 'keywords', content: "ouishare, fest, communities, community, collaborative, economy, consumption, makers, open, source, crowdfunding, cities" }
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=0.5"}
+    %meta{:content => "http://2016.ouisharefest.com", :property => "og:url"}/
+    %meta{:content => "OuiShare Fest 2016\n", :property => "og:title"}/
+    %meta{:content => "http://ouisharefest.com/assets/osf16edges_og.png", :property => "og:image"}/
+    %meta{:content => "OuiShare Fest is an international event that gathers entrepreneurs and social innovators, non-profit and business leaders, grassroots activists and public officials each May in Paris.", :property => "og:description"}/
+    = analytics_init if Rails.env.production?
+  %body
+
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=661085250597998&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    = render 'layouts/flash_messages'
+    / - if controller.action_name != "site_off" && controller.controller_name != "stories"
+    = render 'layouts/header'
+    = yield
+    - if controller.action_name != "site_off" && controller.controller_name != "stories"
+      = render 'layouts/footer'
+

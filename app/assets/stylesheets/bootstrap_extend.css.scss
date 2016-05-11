@@ -1,0 +1,153 @@
+.navbar{
+  .navbar-header{
+    .navbar-brand{
+      .header-logo{
+        width: 230px;
+        position: relative;
+        top: -4px;
+      }
+    }
+  }
+  .nav.navbar-nav{
+    .social-media-icons-header{
+      position: relative;
+      top: 16px;
+    }
+  }
+}
+
+.container:not(.special-container-navbar){
+  width: 80% !important;
+}
+
+/**** Header display corrective (because languages change his width) ******/
+
+@media (min-width: 1201px) and (max-width: 1999px){
+  .special-container-navbar{
+    width: 1200px;
+  }
+}
+
+// @media (max-width: 1200px){
+//   .navbar-header{
+//     float: none;
+//   }
+// }
+
+/** Navbar breakpoint override bootply/120604 */ 
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block !important;
+  }
+}
+/* // Navbar breakpoint override end **/
+
+
+// @media (max-width: 1999px){
+//   .navbar-header{
+//     float: none;
+//   }
+// }
+/*************************************************************************/
+
+
+.round_fond {
+  // background-color: rgba(0,0,0,0.36);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+h3.naiv_thin{
+  font-family:'naiv_normal_thin';
+  .white
+  {
+    color:#ffffff;
+  }
+}
+
+h3.naiv_thin_white{
+  font-family:'naiv_normal_thin';
+  color:#ffffff;
+}
+
+h3.naiv
+{
+  font-family:'naiv_normal';
+  .white
+  {
+    color:#ffffff;
+  }  
+}
+
+h1.slider_naiv_thin
+{
+  font-family:'naiv_normal';
+  font-weight: bold;
+}
+
+.mb_20
+{
+  margin-bottom: 20px;
+}
+
+.mt_20
+{
+  margin-top: 20px;
+}
+
+
+p.testimonial
+{
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+p.white, p.white a
+{
+  color: #ffffff;
+}
+
+p.white a {
+  text-decoration: underline;
+}
+
+p.white a:hover {
+  text-decoration: underline;
+  color :#34495E;
+}
+
+hr.partners
+{
+  margin-top: 10px;
+}

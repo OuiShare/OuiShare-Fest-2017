@@ -1,0 +1,63 @@
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.container-fluid.triangles {
+  // position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.triangles .container {
+  top: 0;
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+  position: absolute;
+  margin: auto;
+  padding-top: 7%;
+}
+
+.controls {
+  font-smoothing: subpixel-antialiased;
+  position: absolute;
+  right: 20px;
+  top: 0;
+
+}
+
+.links {
+  position: absolute;
+  list-style: none;
+  width: 120px;
+  bottom: 40px;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.links p{
+  font-smoothing: subpixel-antialiased;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.25em 0;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  opacity: 0.6;
+  color: #FFF;
+}
+
+.hide {
+  opacity: 0;
+}
