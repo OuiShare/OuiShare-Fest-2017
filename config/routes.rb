@@ -59,19 +59,19 @@ OuiShareFest::Application.routes.draw do
     # post :contact, :action => :contact_email
     # get :entreprises
     # get :faq
-    get :fabl
-    get :forward
+    # get :fabl
+    # get :forward
     # get :freelancers
     get :getting_to_the_venue
  
     get :join
-    get :loveparty
+    # get :loveparty
     get :media
     get :news
-    get :openday
-    get :participants
+    # get :openday
+    # get :participants
     # get :press_and_media
-    get :program
+    # get :program
     # get :satellite_events
     get :site_off
     # get :sliders
