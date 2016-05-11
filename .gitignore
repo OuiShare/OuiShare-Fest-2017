@@ -29,8 +29,44 @@ build/
 # for a library or gem, you might want to ignore these files since the code is
 # intended to run in multiple environments; otherwise, check them in:
 # Gemfile.lock
-# .ruby-version
-# .ruby-gemset
+.ruby-version
+.ruby-gemset
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+.project
+config/database.yml
+log/*
+.tx/config
+get-pip.py
+transifex url.txt
+translations/*
+config/locales/ouishare*
+config/locales/individuals*
+
+config/application.yml
+config/locales/old en:fr/en.yml
+
+config/locales/old en:fr/fr.yml
+
+config/locales/fr.yml
+
+config/initializers/locale.rb
+
+.powenv
+
+Gemfile.lock
+
