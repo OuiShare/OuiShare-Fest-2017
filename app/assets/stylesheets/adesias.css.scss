@@ -1,0 +1,640 @@
+@charset "utf-8";
+
+.container_adesias{
+    width: 100%;
+    background-image: url(/assets/adesias/ad_background.jpg);
+    height:100%;
+    padding: 50px 0 0 0;
+}
+#adesias_home{
+    width:100% !important;
+    background-image: url(/assets/adesias/ad_background.jpg);
+    min-height:100%;
+    padding: 50px 0 0 0;
+}
+
+.adesias_header{
+    width:100% !important;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url(/assets/adesias/header.png);
+    height:210px;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.adesias_main_title
+{
+    font-family:'BebasNeue';
+    font-size:150px;
+    color:#FFF;
+}
+
+.adesias_main_content
+{
+    width:100% !important;
+    background-position: top right;
+    background-repeat: no-repeat; 
+    background-image: url('/assets/adesias/intro.png');
+    background-size: 90% 100%;
+    height:575px;    
+}
+
+.adesias_main_logo
+{
+    margin: 0 0 0 8%;
+    float:left;
+}
+
+.adesias_main_text
+{
+    font-size: 25px;
+    font-family: 'BebasNeue';
+    margin: 200px 400px 0px 13%;
+    width: 60%;    
+}
+
+.adesias_videos_index
+{
+    width:100% !important;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url('/assets/adesias/ad-zone-mozaicvideo.png');
+    background-size: 100%;
+    margin: 0;
+    .individuals-list-display{
+        min-height: 260px; 
+    }
+    
+}
+.block_header_index{
+    width: 88%;
+    height: inherit;
+    margin-left: 6%;
+    margin-right: 6%; 
+    .header_video_name_header{
+        font-family:'BebasNeue';
+        font-size:150px;
+        color:#FFF;
+        height: inherit;
+        -webkit-transform: rotate(-2deg); 
+        -moz-transform: rotate(-2deg); 
+    }
+}
+.container_list_video_index{
+    width: 100%;
+    padding: 0 14%;
+    margin: 50px 0;
+    .col{
+        display: inline-block;
+        width: 327px;
+        padding: 0 2.5px;
+    }
+}
+
+/********************************************************
+ *                     PAGE SHOW                        *
+ ********************************************************/
+.block_header{
+    display: inline-block;
+    width: 100%;
+    height: inherit;
+    position: relative;
+    .header_video_name_header{
+        font-family:'BebasNeue';
+        font-size:150px;
+        color:#FFF;
+        height: inherit;
+        margin-left: 6%;
+        -webkit-transform: rotate(-2deg); 
+        -moz-transform: rotate(-2deg);
+    }
+
+    .back_to_home_header{
+        height: inherit;
+        img{
+            float: left;
+            margin-top: 45px;
+        }
+    }
+}
+
+.clearboth{
+    clear: both;
+}
+
+.no-padding{
+    padding: 0!important;
+}
+
+.video_box{
+    width: inherit;
+    margin-top: -40px;
+    .citation{
+        margin-top: 30px;
+        img{
+            margin-top: -60px;
+            margin-left: 10%;
+        }
+    }
+
+    .content{
+        z-index: 1;
+        width: 100%;
+        margin-top: -90px;
+        .col-center{
+            width: 625px;
+            .content_video{
+                padding: 0;
+                .video_cadre{
+                    background-image: url(/assets/adesias/ad_video_cadre_video.png);
+                    background-repeat:no-repeat;
+                    width:640px;
+                    height:360px;
+                    position: relative;
+                }
+            }
+        }
+        
+        
+
+        .video_nav{
+            padding: 0;
+            margin-top: 35px;
+            .prev{
+                float: right;
+            }
+            .next{
+                float: left;
+                padding: 0;
+            }
+        }
+
+        .post_it{
+            margin-left: 65px;
+            z-index: 10;
+        }
+
+        .visuel{
+            margin-top: 70px;
+            img{
+                max-height: 180px;
+            }
+        }
+    }   
+}
+
+
+.sharing_zone{
+    margin-bottom: 5%;
+    .infos{
+        font-family: 'BebasNeue';
+        font-size: 30px;
+        display: inline;
+        width: 640px;
+        margin-left: 25%;
+        text-align: right;
+        text-transform: uppercase;
+        line-height: 0.80;
+        .bleu{
+            display: inline-block;
+            color: #00ACEE;
+            text-align: right;
+            a{
+                color: #00ACEE;
+
+            }
+        }
+        .vert{
+            display: inline-block;
+            color: #518D91;
+            padding: 0;
+            text-align: right;
+        }
+
+        .vert.info_url{
+            display: inline-block;
+            color: #518D91;
+            text-align: right;
+            background-image: url(/assets/adesias/barre_jaune_info.png);
+            background-size: 100% 100%;
+            padding: 0px 0 5px 20px;
+            a{
+                font-size: 20px;
+                color: #518D91;
+                width: inherit;
+            }
+        }
+
+        #twitter-widget-0{
+            width: 90px!important;
+            height: 20px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 4px;
+        }
+        .fb_iframe_widget{
+            float: left;
+            display: inline-block;
+            position: relative;
+        }
+        
+    }
+}
+
+.other_video_block{
+    width: 100%;
+    background-image: url(/assets/adesias/video_zone_autresvideo.png);
+    background-size: 100% 100%;
+    height: 290px;
+    margin-top: 10px;
+
+    .title{
+        color: #5694B8;
+        font-family: 'BebasNeue';
+        font-size: 80px;
+        font-weight: bold;
+        margin-top: -40px;
+        margin-left: 2%;
+    }
+    .other_video{
+        .container_list_video_index{
+            margin: 0;
+        }
+        .individuals-list-display{
+            min-height: 189px;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 77px;
+    background-image: url(/assets/adesias/footer.png);
+    background-size: 100% 100%;
+    margin-top: -15px;
+}
+
+
+/********************************************************
+ *                   OTHER DECLARATIONS                 *
+ ********************************************************/
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('/assets/BebasNeue/BebasNeue Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('/assets/BebasNeue/BebasNeue Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue Book';
+    src: url('/assets/BebasNeue/BebasNeue Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue Light';
+    src: url('/assets/BebasNeue/BebasNeue Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue Thin';
+    src: url('/assets/BebasNeue/BebasNeue Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue Thin';
+    src: url('/assets/BebasNeue/BebasNeue Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OwnHand';
+    src: url('/assets/OwnHand/OwnHand.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#SHAREABLE{
+    background: url('/assets/adesias/previews/shareable_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+
+#COMMUNITIES{
+    background: url('/assets/adesias/previews/communities_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#CLIMATECHANGE{
+    background: url('/assets/adesias/previews/climatechange_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#FOOD{
+    background: url('/assets/adesias/previews/food_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#TRANSPORTATION{
+    background: url('/assets/adesias/previews/transportation_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#COWORKING{
+    background: url('/assets/adesias/previews/coworking_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#BIOHACKERSPACE{
+    background: url('/assets/adesias/previews/biohackerspace_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#FABLAB{
+    background: url('/assets/adesias/previews/fablab_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#FREESPACE{
+    background: url('/assets/adesias/previews/freespace_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#JOURNALISM{
+    background: url('/assets/adesias/previews/journalism_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#DEMOCRACY{
+    background: url('/assets/adesias/previews/democracy_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#EDUCATION{
+    background: url('/assets/adesias/previews/education_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#KNOWLEDGE{
+    background: url('/assets/adesias/previews/knowledge_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#CURRENCY{
+    background: url('/assets/adesias/previews/currency_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#MONEY{
+    background: url('/assets/adesias/previews/money_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#EXPERIENCES{
+    background: url('/assets/adesias/previews/experiences_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#SHARINGISSEXY{
+    background: url('/assets/adesias/previews/sharingissexy_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#TRUST{
+    background: url('/assets/adesias/previews/trust_OFF.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#SHAREABLE:hover{
+    background: url('/assets/adesias/previews/shareable_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+
+#COMMUNITIES:hover{
+    background: url('/assets/adesias/previews/communities_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#CLIMATECHANGE:hover{
+    background: url('/assets/adesias/previews/climatechange_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#FOOD:hover{
+    background: url('/assets/adesias/previews/food_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#TRANSPORTATION:hover{
+    background: url('/assets/adesias/previews/transportation_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#COWORKING:hover{
+    background: url('/assets/adesias/previews/coworking_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#BIOHACKERSPACE:hover{
+    background: url('/assets/adesias/previews/biohackerspace_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#FABLAB:hover{
+    background: url('/assets/adesias/previews/fablab_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#FREESPACE:hover{
+    background: url('/assets/adesias/previews/freespace_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#JOURNALISM:hover{
+    background: url('/assets/adesias/previews/journalism_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#DEMOCRACY:hover{
+    background: url('/assets/adesias/previews/democracy_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#EDUCATION:hover{
+    background: url('/assets/adesias/previews/education_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#KNOWLEDGE:hover{
+    background: url('/assets/adesias/previews/knowledge_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#CURRENCY:hover{
+    background: url('/assets/adesias/previews/currency_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#MONEY:hover{
+    background: url('/assets/adesias/previews/money_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#EXPERIENCES:hover{
+    background: url('/assets/adesias/previews/experiences_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#SHARINGISSEXY:hover{
+    background: url('/assets/adesias/previews/sharingissexy_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+#TRUST:hover{
+    background: url('/assets/adesias/previews/trust_ON.png');
+    text-indent:-9999px;
+    display: block;
+    width: 322px;
+    height: 189px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+.container
+  .row
+    - @settings.each do |setting|
+      = define_setting_action(setting)
+  %br
+  .row    
+    %button{:type => "button", :class => "btn btn-warning", :id => "restart_server_btn"}
+      Restart server      
+  = render '/modals/server_loader'

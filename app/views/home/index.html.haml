@@ -1,0 +1,421 @@
+#container.container-fluid.triangles
+  #output.triangles
+  .container
+    .main-section
+      .row
+        #head_logo_edges
+          = image_tag "/assets/logo_osf16_edges_white.svg"
+      .row
+        / .col-md-10.col-md-offset-1
+        /   %h1.main-title.white
+        /     = t('dynamic_translations.main.title')
+        .col-md-6.col-md-offset-3
+          %br
+          / %p.main-section-paragraphes.white
+          /   = t('dynamic_translations.main.subtitle')
+          %h5.normal.white
+            %span.vert-borders
+              = t('dynamic_translations.main.date')
+          %h5.normal.white
+            = t('dynamic_translations.main.theme')
+
+      .row
+        .col-md-8.col-md-offset-2
+          / %br
+          %br
+          %p.centered.join_bouton
+            %a{:href => 'join#_tickets'}
+              %button.btn.btn-embossed.btn-primary
+                = t('dynamic_translations.reminder_ticket.getyourtickets')
+
+#controls.controls
+= javascript_include_tag 'triangles'
+
+/ About the Fest
+.blank_bg
+  .container
+    .second-section
+      .row.centered
+        / .carousel.slide.col-xs-12.col-md-offset-1.col-lg-offset-2.col-md-10.col-lg-8
+        /   .carousel-inner
+        /     .item.active
+        /       .press-content{:style => 'height:3em;'}
+        /         .press-text
+        /           %h3
+        /             = t('dynamic_translations.about.subtitle')
+        /       .label-press
+        /         Arun Sundararajan, NYU      
+        /   %img.quote-left-carousel{:src => '/assets/quote_left.png', :alt => 'quote left'}
+        /   %img.quote-right-carousel{:src => '/assets/quote_left.png', :alt => 'quote right'}
+        .col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2
+          %p.large{:style => 'margin-top: 1.8em;'}
+            = t('dynamic_translations.about.landing_1')
+          %br
+          %p.large
+            = t('dynamic_translations.about.landing_2')
+          %br
+      .row.centered.btn-space
+        .col-md-6.col-md-offset-3
+          %a{:href => 'about#_about'}
+            %button.btn.btn-large.btn-primary
+              = t('dynamic_translations.readmore.title')
+      .row.centered.vspace#ouishare_video
+        .col-md-8.col-md-offset-2{style:"position: relative"}
+          %img{style:"display:block;width:100%;height:auto", src:"http://placehold.it/16x9"}
+          %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/zIr5t_-pRQU", style:"position:absolute;top:0;left:0;width:100%;height:100%"}
+
+
+  = render 'modals/visit_modal'
+
+%section#slideshow-container
+  .banner
+    %ul
+
+      / slide 1
+      %li{"data-transition" => "fade"}
+        %img{alt: "", src: "assets/slider/inspire_2016.jpg", style: "background:#1abc9c"}/
+        .caption.general_caption.pst_media12.lft{"data-easing" => "easeOutExpo", "data-end" => "7900", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "600", "data-start" => "800", "data-x" => "58", "data-y" => "250"}
+          %h1{:style => "text-shadow: 2px 0px black"}
+            Inspire
+
+      / slide 2
+      %li{"data-transition" => "fade"}
+        %img{alt: "", src: "assets/slider/cocreate_2016.jpg", style: "background:#1abc9c"}/
+        .caption.general_caption.pst_media14.lfl.ltl{"data-easing" => "easeOutBack", "data-end" => "5700", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "900", "data-start" => "100", "data-x" => "56", "data-y" => "250"}
+          %h1{:style => "text-shadow: 2px 0px black"}
+            Collaborate
+
+      / slide 3
+      %li{"data-transition" => "fade"}
+        %img{alt: "", src: "assets/slider/connect_2016.jpg", style: "background:#1abc9c"}/
+        .caption.general_caption.pst_media12.lft{"data-easing" => "easeOutExpo", "data-end" => "7900", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "600", "data-start" => "800", "data-x" => "58", "data-y" => "250"}
+          %h1{:style => "text-shadow: 2px 0px black"}
+            Connect
+
+      / slide 4
+      %li{"data-transition" => "fade"}
+        %img{alt: "", src: "assets/slider/new_img5.jpg", style: "background:#e4e6e6"}/
+        .caption.general_caption.pst_media14.lfl.ltl{"data-easing" => "easeOutBack", "data-end" => "5700", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "900", "data-start" => "100", "data-x" => "56", "data-y" => "250"}
+          %h1{:style => "text-shadow: 2px 0px black"}
+            Debate
+
+      %li{"data-transition" => "fade"}
+        %img{alt: "", src: "assets/slider/create_2016.jpg", style: "background:#1abc9c"}/
+        .caption.general_caption.pst_media12.lft{"data-easing" => "easeOutExpo", "data-end" => "7900", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "600", "data-start" => "800", "data-x" => "58", "data-y" => "250"}
+          %h1{:style => "text-shadow: 2px 0px black"}
+            Create
+
+      %li{"data-transition" => "fade"}
+        %img{alt: "", src: "assets/slider/dance_2015.jpg", style: "background:#1abc9c"}/
+        .caption.general_caption.pst_media12.lft{"data-easing" => "easeOutExpo", "data-end" => "7900", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "600", "data-start" => "800", "data-x" => "58", "data-y" => "250"}
+          %h1{:style => "text-shadow: 2px 0px black"}
+            Dance!
+
+
+/ Speakers
+
+#speakers.vspace{:style => "padding-top:4.5em;"}
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.speakers.title')
+      %hr.pink
+      - if !@displayed_speakers.blank?
+        .ch-grid
+          - @displayed_speakers.each do |speaker|
+            .col-lg-3.individuals-list-display
+              %li
+                = render "/individuals/partials/speaker_display", :speaker => speaker
+          - if !@hidden_speakers.blank?
+            %div
+              #allspeakers{style: "display: none;"}
+                - @hidden_speakers.each do |speaker|
+                  .col-lg-3.individuals-list-display
+                    %li
+                      = render "/individuals/partials/speaker_display", :speaker => speaker
+              %div.row.mb_20
+                %a#btn_showspeakers_down
+                  %button.btn.btn-embossed.btn-primary.mt_20
+                    = t('dynamic_translations.speakers.show_all')
+
+              %div.row.mb_20.mt_20
+                %button.btn.btn-embossed.btn-primary.hide#btn_showspeakers_up
+                  = t('dynamic_translations.speakers.hide_all')
+
+    .row.centered.btn-space
+      .col-md-12
+        .col-md-6.col-md-offset-3
+          %a{:href => 'participants#_speakers'}
+            %button.btn.btn-large.btn-primary
+              = t('dynamic_translations.speakers.see_all')
+
+
+
+
+
+/ Buy tickets
+.tickets.triangle_bg_tickets.white_txt.vspace
+  .container.tickets-section
+    .row.centered{:style => "padding-top:0; padding-bottom:0"}
+      .col-md-10.col-md-offset-1.col-sm-12
+        %h3.ouishare_stencil.centered
+          = t('dynamic_translations.tickets.title')
+        %hr.pink
+        %br
+        %br
+        %p
+          = t('dynamic_translations.tickets.description1')
+          %a{href: "/join#_getinvolved"}
+            = t('dynamic_translations.tickets.get_involved')
+        .tickets-table
+          .row
+            .col-md-2.col-md-offset-6.col-xs-4.col-xs-offset-0.title-blue
+              = t('dynamic_translations.tickets_table.pioneers')
+            .col-md-2.col-xs-4.title-blue
+              = t('dynamic_translations.tickets_table.explorers')
+            .col-md-2.col-xs-4.title-blue
+              = t('dynamic_translations.tickets_table.hackers')
+          .tickets-border
+            .row.title-inverse
+              .col-md-6.col-sm-12.title-inverse
+                %span{:style => "padding:2em auto;"}
+                  = t('dynamic_translations.tickets_table.core_features')
+              .col-md-2.col-xs-4.title-inverse
+                = t('dynamic_translations.tickets_price.pioneers_3d')
+                %br
+                %br
+                = t('dynamic_translations.tickets_price.pioneers_1d')
+              .col-md-2.col-xs-4.title-inverse
+                = t('dynamic_translations.tickets_price.explorers_3d')
+                %br
+                %br
+                = t('dynamic_translations.tickets_price.explorers_1d')
+              .col-md-2.col-xs-4.title-inverse
+                = t('dynamic_translations.tickets_price.hackers_3d')
+                %br
+                %br
+                = t('dynamic_translations.tickets_price.hackers_1d')
+            .row
+              .col-md-6.col-sm-12
+                = t('dynamic_translations.tickets_table.core_1_access')
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.core_2_food')
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.core_3_partner_events')
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.core_4_access_party')
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.core_5_participants_list')
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+            .row
+              .col-md-12.title-inverse{:style => "padding:none;"}
+                = t('dynamic_translations.tickets_table.extended_features')
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.ext_3_webinar')
+              .col-md-2.col-xs-4
+                &nbsp;
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                &nbsp;
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.ext_1_reception')
+              .col-md-2.col-xs-4
+                &nbsp;
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                &nbsp;
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.ext_welcoming') 
+              .col-md-2.col-xs-4
+                &nbsp;
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                &nbsp;
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.ext_matchmaking')
+              .col-md-2.col-xs-4
+                &nbsp;
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                &nbsp;
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.ext_advice')
+              .col-md-2.col-xs-4
+                &nbsp;
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                &nbsp;
+            .row
+              .col-md-6
+                = t('dynamic_translations.tickets_table.ext_4_book') 
+                %em
+                  = t('dynamic_translations.tickets_table.ext_4_book_title')
+              .col-md-2.col-xs-4
+                &nbsp;
+              .col-md-2.col-xs-4
+                = image_tag "/assets/tickets-tick-white.svg"
+              .col-md-2.col-xs-4
+                &nbsp;
+          %p.left
+            = t('dynamic_translations.tickets_table.questions') 
+            %b
+              %a{:href => 'mailto:partners@ouisharefest.com'}
+                partners@ouisharefest.com
+        %br
+        / %p.text-center
+        /   = image_tag("2016-tickets-#{I18n.locale}-05.png", width: "100%", alt: "Ticket options")
+        /   / %img{:src => '/assets/2016-tickets-en-03.png', :alt => 'Ticket options', :style => "max-width: 100%"}
+        /   / %img{:src => '/assets/2016-tickets-fr-03.png', :alt => 'Options billets', :style => "max-width: 100%"}
+        / %br
+        %br
+
+        / / Eventbrite form
+        / %div.eventbrite
+        /   %iframe.inverse{:allowtransparency => "true", :frameborder => "0", :height => "640", :hspace => "0", :marginheight => "5", :marginwidth => "5", :scrolling => "auto", :src => "http://www.eventbrite.com/tickets-external?eid=19202830182&ref=etckt&v=2", :vspace => "0", :width => "100%"}
+        /   %div{:style => "font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;"}
+        /     %a{:href => "http://www.eventbrite.com/r/etckt", :style => "color:#ddd; text-decoration:none;", :target => "_blank"} 
+        /       =t('dynamic_translations.tickets.event_registration_online')
+        /     %span{:style => "color:#ddd;"} 
+        /       =t('dynamic_translations.tickets.for')
+        /     %a{:href => "https://www.eventbrite.com/e/ouishare-fest-paris-2016-tickets-19202830182?aff=eac2", :style => "color:#ddd; text-decoration:none;", :target => "_blank"} OuiShare Fest 2016
+        /     %span{:style => "color:#ddd;"} 
+        /       =t('dynamic_translations.tickets.powered_by')
+        /     %a{:href => "http://www.eventbrite.com?ref=etckt", :style => "color:#ddd; text-decoration:none;", :target => "_blank"} Eventbrite
+
+    .row.centered.btn-space
+      .col-md-12
+        .col-md-6.col-md-offset-3
+          %a{:href => 'join#eventbrite'}
+            %button.btn.btn-large.btn-primary.get-involved-btn
+              = t('dynamic_translations.tickets.title')
+
+
+/ Partners
+.partners-container
+  .container.sinfo
+    - if !@partners.blank?
+      .row.centered
+        %br
+        %h3.ouishare_stencil
+          = t('dynamic_translations.partners.title')
+        %hr.pink
+        .partners
+      = render "/individuals/partials/partners_display", :partners => @partners, :important_partners_display => true, :important_partners_count => 3
+      %br
+      %br
+
+    - if !@patronage.blank?
+      .row.centered
+        %br
+        %h6
+          = t('dynamic_translations.partners.patronage_mairie')
+        .partners
+      = render "/individuals/partials/partners_display", :partners => @patronage, :important_partners_display => false
+      %br
+      %br
+
+    - if !@media_partners.blank?
+      .row.centered
+        %br
+        %h3.ouishare_stencil
+          = t('dynamic_translations.partners.media_partner_title')
+        %hr.pink
+        .partners
+      = render "/individuals/partials/partners_display", :partners => @media_partners, :important_partners_display => false
+      %br
+      %br
+
+    - if !@friends.blank?
+      .row.centered
+        %br
+        %h3.ouishare_stencil
+          = t('dynamic_translations.partners.friends_title')
+        %hr.pink
+        .partners
+      = render "/individuals/partials/partners_display", :partners => @friends, :important_partners_display => false
+
+      %br
+      %br
+
+
+    - if !@supporters.blank?
+      .row.centered
+        %br
+        %h3.ouishare_stencil
+          = t('dynamic_translations.partners.supporters_title')
+        %hr.pink
+        .partners
+      = render "/individuals/partials/partners_display", :partners => @supporters, :important_partners_display => false
+
+
+.become_partner
+  .container 
+    .row.centered
+      .col-md-4.col-md-offset-4.col-sm-12
+        .btn.btn-pink.become-partner-btn
+          %a{:href => 'mailto:partners@ouisharefest.com'}
+            / Become a partner
+            = t('dynamic_translations.partners.button')
+
+
+/ Join section
+.blank_bg.vspace
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.join.ready')
+    .row.centered
+      .col-md-6.col-md-offset-3
+        %br
+        %br
+        %p.centered
+          %img.img-responsive{alt: "Ready to join?", src: "assets/osf16-join.jpg"}/
+    .row.centered.btn-space
+      .col-md-12
+        .col-md-6.col-md-offset-3
+          %a{:href => 'join#eventbrite'}
+            %button.btn.btn-large.btn-primary
+              = t('dynamic_translations.reminder_ticket.getyourtickets')

@@ -1,0 +1,72 @@
+// Place all the styles related to the Fest Forward page here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top_ff {
+  background-color: #001E60 !important;
+  background-position: 0px 80px;
+}
+.fforward_bg {
+  background: url(/assets/16bg-fest-forward.jpg), url(/assets/16bg-fest-forward.jpg);
+  background-repeat: no-repeat;
+  background-color: #001E60;
+  /*background-position: 0px 85px;*/
+  min-height: 100%;
+  margin-bottom: 5%;
+  background-blend-mode: multiply, exclusion;
+}
+#head_logo_ff img{
+  height:250px;
+  margin-top:10%;
+  margin-bottom: 5%;
+}
+
+
+
+/*h4 {
+  font-size: 23px !important;
+}*/
+
+.tagline {
+  background-color: #001E60;
+  color: white;
+  padding:0.2em 0.5em;
+}
+
+/* styles for application block */
+.ff_apply {
+  background: url("http://osf2016.pitchme.webfactional.com/assets/16bg-net.png") no-repeat;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  h6 {
+    margin-top: 1.3em;
+    margin-bottom: 0;
+  }
+
+}
+
+#ff_projects {
+  img {
+    max-width: 100%;
+  }
+  img.space {
+  margin-top: 1.5em;
+}
+}
+
+
+ul.criteria {
+  padding: 2em 0;
+  li {
+    margin-right: 0.5em;
+    cursor: text;
+    opacity: 0.72;
+  }
+}
+
+// Typeform styles
+iframe#typeform{
+  border:0;
+  height: 1100px;
+  display:inline-block;
+}

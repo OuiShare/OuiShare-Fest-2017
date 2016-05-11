@@ -1,0 +1,203 @@
+.blank_bg.top#_speakers{:style => "padding-top: 130px;"}
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.speakers_attendees.title')
+      %hr.pink
+    .row.centered
+      %a#sched-embed{:href => "http://ouisharefestparis2016.sched.org/directory/speakers"}
+      %script{:type => "text/javascript", :src => "http://ouisharefestparis2016.sched.org/js/embed.js"}
+/       -if !@displayed_speakers.blank?
+/         .ch-grid
+/           - @speakers.each do |speaker|
+/             .col-lg-3.individuals-list-display
+/               %li
+/                 = render "/individuals/partials/speaker_display", :speaker => speaker
+
+/ / Featured Attendees
+/ #featured{style: "padding-top:7%;"}
+/   .container
+/     .row.centered
+/       %h3.ouishare_stencil
+/         = t('dynamic_translations.speakers.featured')
+/       %hr.pink
+/       - if !@featured.blank?
+/         .ch-grid
+/           - @featured.each do |speaker|
+/             .col-lg-3.individuals-list-display
+/               %li
+/                 = render "/individuals/partials/speaker_display", :speaker => speaker
+
+
+.blank_bg#_team{:style => "padding-top: 90px;"}
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        =t('dynamic_translations.team.title')     
+      %hr.pink
+      - if !@team_members.blank?
+        .ch-grid
+          - @team_members.each do |team_member|
+            .col-lg-3.individuals-list-display
+              %li
+                = render "/individuals/partials/team_member_display", :team_member => team_member          
+          / - if !@hidden_team_members.blank?
+          /   %div
+          /     #allteam_members{style: "display: none;"}  
+          /       - @hidden_team_members.each do |team_member|
+          /         .col-lg-3.individuals-list-display
+          /           %li
+          /             = render "/individuals/partials/team_member_display", :team_member => team_member           
+          /     %div.row
+          /       %a#btn_team_members_down
+          /         %button.btn.btn-embossed.btn-primary 
+          /           = t('dynamic_translations.team.show_all')
+          /     %div.row  
+          /       %a.hide#btn_team_members_up            
+          /         %button.btn.btn-embossed.btn-primary
+          /           = t('dynamic_translations.team.hide_all')
+
+/ Curators
+#_curators.vspace
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.program.curators')
+      %hr.pink
+      - if !@curators.blank?
+        .ch-grid
+          - @curators.each do |team_member|
+            .col-lg-3.individuals-list-display
+              %li
+                = render "/individuals/partials/team_member_display", :team_member => team_member 
+
+.partners-container#_partners{:style => 'padding-top:100px'}
+  .container.sinfo
+    - if !@partners.blank?
+      .row.centered
+        %br
+        %h3.ouishare_stencil
+          = t('dynamic_translations.partners.title')
+        %hr.pink
+      = render "/individuals/partials/partners_display", :partners => @partners, :important_partners_display => true, :important_partners_count => 3
+      %br
+      %br
+
+    - if !@patronage.blank?
+      .row.centered
+        %br
+        %h6
+          = t('dynamic_translations.partners.patronage_mairie')
+        .partners
+      = render "/individuals/partials/partners_display", :partners => @patronage, :important_partners_display => false
+      %br
+      %br
+
+    - if !@media_partners.blank?
+      .row.centered
+        %br
+        %h3.ouishare_stencil
+          = t('dynamic_translations.partners.media_partner_title')
+
+        %hr.pink
+      = render "/individuals/partials/partners_display", :partners => @media_partners, :important_partners_display => false
+      %br
+      %br
+
+
+    - if !@friends.blank?
+      .row.centered
+        %br
+        %h3.ouishare_stencil
+          = t('dynamic_translations.partners.friends_title')
+
+        %hr.pink
+      = render "/individuals/partials/partners_display", :partners => @friends, :important_partners_display => false
+
+      %br
+      %br
+
+    - if !@supporters.blank?
+      .row.centered
+        %br
+        %h3.ouishare_stencil
+          = t('dynamic_translations.partners.supporters_title')
+
+        %hr.pink
+      = render "/individuals/partials/partners_display", :partners => @supporters, :important_partners_display => false
+
+.become_partner
+  .container 
+    .row.centered
+      .col-md-4.col-md-offset-4.col-sm-12
+        .btn.btn-pink.become-partner-btn
+          %a{:href => 'mailto:partners@ouisharefest.com'}
+            / Become a partner
+            = t('dynamic_translations.get_involved.partners_txt')
+
+/ Join section
+.blank_bg.vspace
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.join.ready')
+    .row.centered
+      .col-md-6.col-md-offset-3
+        %br
+        %br
+        %p.centered
+          %img.img-responsive{alt: "Ready to join?", src: "assets/osf16-join.jpg"}/
+    .row.centered.btn-space
+      .col-md-12
+        .col-md-6.col-md-offset-3
+          %a{:href => 'join#eventbrite'}
+            %button.btn.btn-large.btn-primary
+              = t('dynamic_translations.reminder_ticket.getyourtickets')
+
+/ .blank_bg#_whoscoming
+/   .container.tickets-section 
+/     .row.centered
+/       .col-md-8.col-md-offset-2
+/         - if @ouishare_fest_attendees && !@ouishare_fest_attendees["attendees"].blank?
+/           %h3.ouishare_stencil
+/             = t('dynamic_translations.tickets.who_s_coming') 
+/           %hr.pink
+/           %br
+/           %ul.unstyled.attendees-list
+/             / - attendees = @ouishare_fest_attendees["attendees"].first(ENV["EVENTBRITE_ATTENDEES_DISPLAY_NUMBER"].to_i)
+/             - attendees = @ouishare_fest_attendees["attendees"]
+/             - attendees.each do |attendee|
+/               .col-xs-6.col-sm-4.col-md-3.attendee-container
+/                 %li.attendee-items
+/                   / =image_tag display_gravatar(attendee["attendee"]["email"]), :class => 'img-circle'
+/                   .row                  
+/                     = attendee["attendee"]["first_name"]
+/                     = attendee["attendee"]["last_name"][0]+'.'
+/                   .row
+/                     %b
+/                       = attendee["attendee"]["company"]
+              
+/           / - if @ouishare_fest_attendees["attendees"].count > ENV["EVENTBRITE_ATTENDEES_DISPLAY_NUMBER"].to_i  
+/           /   %div
+/           /     #allattendees{style: "display: none;"} 
+/           /       - attendees = @ouishare_fest_attendees["attendees"].last(@ouishare_fest_attendees["attendees"].count - ENV["EVENTBRITE_ATTENDEES_DISPLAY_NUMBER"].to_i)
+/           /       - attendees.each do |attendee|
+                        
+/           /         .col-xs-12.col-sm-4.col-md-3.col-lg-2.attendee-container
+/           /           %li.attendee-items
+/           /             / =image_tag display_gravatar(attendee["attendee"]["email"]), :class => 'img-circle'
+/           /             .row{:style => "color:white;"}                     
+/           /               = attendee["attendee"]["first_name"]
+/           /               = attendee["attendee"]["last_name"][0]+'.'
+/           /             .row
+/           /               = attendee["attendee"]["company"]
+                    
+/           /     %br   
+/           /     %div.row
+/           /       %a.individuals-list-btn#btn_attendees_down
+/           /         %button.btn.btn-embossed.btn-primary 
+/           /           = t('dynamic_translations.tickets.show_all_attendees')
+/           /     %div.row 
+/           /       %a.individuals-list-btn#btn_attendees_up        
+/           /         %button.btn.btn-embossed.btn-primary
+/           /           = t('dynamic_translations.tickets.hide_all_attendees')

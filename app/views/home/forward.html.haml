@@ -1,0 +1,434 @@
+.fforward_bg
+  .container
+    .main-section
+      .row
+        #head_logo_ff
+          = image_tag "/assets/logo-fest-forward-white.svg"
+      .row
+        / .col-md-10.col-md-offset-1
+        /   %h1.main-title{:style => "color:#f56c6c"}
+        /     = t('dynamic_translations.ff.title')
+
+      .col-md-6.col-md-offset-3
+        %h5.tagline
+          = t('dynamic_translations.ff.tagline')
+      .row
+        .col-md-8.col-md-offset-2
+          %br
+          %p.centered.join_bouton
+            %a{:href => '#ff_projects'}
+              %button.btn.btn-padding.btn-fandango
+                = t('dynamic_translations.ff_projects.title')
+
+.blank_bg#_tagline
+  .container
+    .row.centered
+      .col-md-8.col-md-offset-2
+        / %h4.tagline
+        /   = t('dynamic_translations.ff.tagline')
+        %h5.tagline.text-center
+          = t('dynamic_translations.ff_about.subtitle')
+
+.blank_bg.vspace#ff_projects
+  .container
+    .row.centered{:style => 'margin-top: 7%;'}
+      %h3.ouishare_stencil
+        = t('dynamic_translations.ff_projects.title')
+      %hr.pink
+    .row.centered#lowtechlab
+      .col-md-8.col-md-offset-2
+        %a{href: "http://lowtechlab.org/", target: "_blank"}
+          %img.space{alt: "Low Tech Lab", src: "assets/ff16-logo-ltl.png"}/
+    .row.justify
+      .col-md-8.col-md-offset-2
+        %p
+          = t('dynamic_translations.ff_projects.ltl_desc')
+    .row
+      .col-md-6.col-md-offset-3
+        %img.space{style:"display:block;width:100%;height:auto", src:"assets/ff16-photo-lowtech.jpg"}
+      .carousel.slide.col-xs-12.col-md-offset-1.col-lg-offset-2.col-md-10.col-lg-8
+        .carousel-inner
+          .item.active
+            .press-content
+              .press-text
+                %p.h6
+                  = t('dynamic_translations.ff_projects.ltl_quote')
+            .label-press
+              Clément CHABOT
+              %br
+              = t('dynamic_translations.ff_projects.ltl_author_desc')
+        %img.quote-left-carousel{:src => 'assets/quote_left.png', :alt => 'quote left'}
+        %img.quote-right-carousel{:src => 'assets/quote_left.png', :alt => 'quote right'}
+    / .row{:style => 'margin-top: 2em;'}
+    /   .col-md-8.col-md-offset-2
+    /     %p
+    /       %b.caps
+    /         = t('dynamic_translations.ff_projects.status')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.ltl_status')
+    /       %br
+    /       %b.caps
+    /         = t('dynamic_translations.ff_apply.selection_criteria_impact')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.ltl_impact')
+    /       %br
+    /       %b.caps
+    /         = t('dynamic_translations.ff_apply.selection_criteria_challenge')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.ltl_challenge')
+    /       %br
+    /       %br
+    /       %br
+
+    .row.centered#partup
+      .col-md-8.col-md-offset-2
+        %a{href: "http://part-up.com/", target: "_blank"}
+          %img{alt: "Part-up", src: "assets/ff16-logo-partup.png", style: "max-height:140px;"}/
+    .row.justify
+      .col-md-8.col-md-offset-2
+        %p
+          = t('dynamic_translations.ff_projects.partup_desc')
+        %br
+        %br
+    .row
+      .col-md-6.col-md-offset-3
+        %img{style:"display:block;width:100%;height:auto", src:"http://placehold.it/16x9"}
+        %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/LNpMI5gpNuQ", style:"position:absolute;top:0;left:0;width:100%;height:100%"}
+      .carousel.slide.col-xs-12.col-md-offset-1.col-lg-offset-2.col-md-10.col-lg-8
+        .carousel-inner
+          .item.active
+            .press-content
+              .press-text
+                %p.h6
+                  = t('dynamic_translations.ff_projects.partup_quote')
+            .label-press
+              %a{href: "https://linkedin.com/in/ralphboeije", target: "_blank"}
+                Ralph Boeije
+              %br
+              = t('dynamic_translations.ff_projects.partup_author_desc')
+        %img.quote-left-carousel{:src => 'assets/quote_left.png', :alt => 'quote left'}
+        %img.quote-right-carousel{:src => 'assets/quote_left.png', :alt => 'quote right'}
+    / .row{:style => 'margin-top: 2em;'}
+    /   .col-md-8.col-md-offset-2
+    /     %p
+    /       %b.caps
+    /         = t('dynamic_translations.ff_projects.status')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.partup_status')
+    /       %br
+    /       %b.caps
+    /         = t('dynamic_translations.ff_apply.selection_criteria_impact')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.partup_impact')
+    /       %br
+    /       %b.caps
+    /         = t('dynamic_translations.ff_apply.selection_criteria_challenge')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.partup_challenge')
+    /       %br
+    /       %br
+    /       %br
+
+    .row.centered#s4s
+      .col-md-8.col-md-offset-2
+        %a{href: "http://science4sustainability.com/", target: "_blank"}
+          %img{alt: "Science 4 Sustainability", src: "assets/ff16-logo-s4s.png", style: "max-height:160px;"}/
+    .row.justify
+      .col-md-8.col-md-offset-2
+        %p
+          = t('dynamic_translations.ff_projects.s4s_desc')
+    .row
+      .col-md-6.col-md-offset-3
+        %img.space{style:"display:block;width:100%;height:auto", src:"assets/ff16-photo-s4s.jpg"}
+      .carousel.slide.col-xs-12.col-md-offset-1.col-lg-offset-2.col-md-10.col-lg-8
+        .carousel-inner
+          .item.active
+            .press-content
+              .press-text
+                %p.h6
+                  = t('dynamic_translations.ff_projects.s4s_quote')
+            .label-press
+              %a{href: "https://www.linkedin.com/in/mirabangel", target: "_blank"}
+                Mira Bangel
+              %br
+              = t('dynamic_translations.ff_projects.s4s_author_desc')
+        %img.quote-left-carousel{:src => 'assets/quote_left.png', :alt => 'quote left'}
+        %img.quote-right-carousel{:src => 'assets/quote_left.png', :alt => 'quote right'}
+    / .row{:style => 'margin-top: 2em;'}
+    /   .col-md-8.col-md-offset-2
+    /     %p
+    /       %b.caps
+    /         = t('dynamic_translations.ff_projects.status')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.s4s_status')
+    /       %br
+    /       %b.caps
+    /         = t('dynamic_translations.ff_apply.selection_criteria_impact')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.s4s_impact')
+    /       %br
+    /       %b.caps
+    /         = t('dynamic_translations.ff_apply.selection_criteria_challenge')
+    /         \:
+    /       = t('dynamic_translations.ff_projects.s4s_challenge')
+    /       %br
+    /       %br
+    /       %br
+
+.triangle_bg_3.white_txt#_about
+  .container
+    .second-section
+      .row.centered
+        %h3.ouishare_stencil
+          = t('dynamic_translations.ff_about.title')
+        %hr.pink
+      .row.centered
+        .col-sm-8.col-sm-offset-2
+          %p
+            = t('dynamic_translations.ff_about.p1a')
+            %a{href: "http://ouisharefest.com", target: "_blank"}
+              OuiShare Fest Paris,
+            = t('dynamic_translations.ff_about.p1b')
+          %br
+          %p
+            = t('dynamic_translations.ff_about.p2a')
+          %br
+          %p
+            = t('dynamic_translations.ff_about.p2a_building')
+            %a{href: "http://poc21.cc", target: "_blank"}
+              POC21
+            = t('dynamic_translations.ff_about.p2b')
+            %a{href: "http://awards.ouishare.net", target: "_blank"}
+              OuiShare Awards,
+            = t('dynamic_translations.ff_about.p2c')
+          %br
+          / %p
+          /   = t('dynamic_translations.ff_about.p3a')
+          /   %a{href: '#_apply'}
+          /     = t('dynamic_translations.ff_about.p3_apply_here')
+          /     \>>
+
+.blank_bg.vspace#_apply
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.ff_apply.title')
+      %hr.pink
+    .row.justify
+      .col-md-8.col-md-offset-2
+        %br
+        %p
+          = t('dynamic_translations.ff_apply.p2') 
+          %b.caps
+            = t('dynamic_translations.ff_apply.p2_requirements')
+        %ol
+          %li
+            = t('dynamic_translations.ff_apply.p2_req1')
+          %li
+            = t('dynamic_translations.ff_apply.p2_req2')
+        %br
+        %br
+    .row.justify
+      .col-md-8.col-md-offset-2
+        %p
+          = t('dynamic_translations.ff_apply.p1')
+        %ul
+          %li
+            = t('dynamic_translations.ff_apply.p1a')
+          %li
+            = t('dynamic_translations.ff_apply.p1b')
+          %li
+            = t('dynamic_translations.ff_apply.p1c')
+          %li
+            = t('dynamic_translations.ff_apply.p1d')
+        %br
+        / %p.centered.join_bouton
+        /   %a{:href => 'https://ouisharefest.typeform.com/to/s8ouC5', :target => '_blank'}
+        /     %button.btn.btn-padding.btn-violet
+        /       = t('dynamic_translations.ff.btn_apply')
+        / %br
+
+    .row.justify
+      .col-md-8.col-md-offset-2
+        %h4
+          = t('dynamic_translations.ff_apply.selection_criteria')
+        %ul.criteria
+          %li.btn.btn-purple
+            %span.caps
+              = t('dynamic_translations.ff_apply.selection_criteria_impact') 
+            / = t('dynamic_translations.ff_apply.selection_criteria_impact_desc')
+          %li.btn.btn-fandango
+            %span.caps
+              = t('dynamic_translations.ff_apply.selection_criteria_replicability') 
+          /   / = t('dynamic_translations.ff_apply.selection_criteria_replicability_desc')
+          / %li
+          /   %span.caps
+          /     = t('dynamic_translations.ff_apply.selection_criteria_disruption') 
+          /   / = t('dynamic_translations.ff_apply.selection_criteria_disruption_desc')
+          / %li
+          /   %span.caps
+          /     = t('dynamic_translations.ff_apply.selection_criteria_viability') 
+          /   / = t('dynamic_translations.ff_apply.selection_criteria_viability_desc')
+          / %li
+          /   %span.caps
+          /     = t('dynamic_translations.ff_apply.selection_criteria_structure') 
+          /   / = t('dynamic_translations.ff_apply.selection_criteria_structure_desc')
+          %li.btn.btn-purple
+            %span.caps
+              = t('dynamic_translations.ff_apply.selection_criteria_team') 
+          %li.btn.btn-fandango
+            %span.caps
+              = t('dynamic_translations.ff_apply.selection_criteria_challenge') 
+            / = t('dynamic_translations.ff_apply.selection_criteria_challenge_desc')
+          %li.btn.btn-purple
+            %span.caps
+              = t('dynamic_translations.ff_apply.selection_criteria_synergy') 
+          / %li
+          /   %span.caps
+          /     = t('dynamic_translations.ff_apply.selection_criteria_values') 
+          / /   = t('dynamic_translations.ff_apply.selection_criteria_values_desc') 
+          / /   %a{:href => 'http://ouishare.net/about/values', :target => '_blank'}
+          / /     = t('dynamic_translations.ff_apply.selection_criteria_values_link')
+          / / %li
+          / /   %span.caps
+          / /     = t('dynamic_translations.ff_apply.selection_criteria_program') 
+          / /   = t('dynamic_translations.ff_apply.selection_criteria_program_desc') 
+          / /   %a{href: 'program'}
+          / /     = t('dynamic_translations.ff_apply.selection_criteria_program_link')
+        %p
+          = t('dynamic_translations.ff_apply.p3')
+        %p
+          = t('dynamic_translations.ff_apply.p4')
+        %br
+        %br
+        %h4.blue
+          = t('dynamic_translations.ff_apply.process')
+        / %h6
+        /   = t('dynamic_translations.ff_apply.process_dl')
+        / %p
+        /   %a{:href => 'https://ouisharefest.typeform.com/to/s8ouC5', :target => '_blank'}
+        /     = t('dynamic_translations.ff_apply.process_dl_link')
+        %p
+          = t('dynamic_translations.ff_apply.process_dl_1')
+        %ul
+          %li
+            = t('dynamic_translations.ff_apply.process_dl_1a')
+          %li
+            = t('dynamic_translations.ff_apply.process_dl_1b')
+        / %h6
+        /   = t('dynamic_translations.ff_apply.process_1_pre')
+        / %p
+        /   %em
+        /     = t('dynamic_translations.ff_apply.process_1_pre_dates')
+        /   %br
+        /   = t('dynamic_translations.ff_apply.process_1_pre_desc')
+        /   %br
+        / %h6
+        /   = t('dynamic_translations.ff_apply.process_2_voting') 
+        / %p
+        /   %em
+        /     = t('dynamic_translations.ff_apply.process_2_voting_dates')
+        /   %br
+        /   = t('dynamic_translations.ff_apply.process_2_voting_desc')
+        /   %br
+        / %h6
+        /   = t('dynamic_translations.ff_apply.process_3_prep')
+        / %p
+        /   %em
+        /     = t('dynamic_translations.ff_apply.process_3_prep_dates')
+        /   %br
+        /   = t('dynamic_translations.ff_apply.process_3_prep_desc')
+        /   %br      
+        / %h6
+        /   = t('dynamic_translations.ff_apply.process_4_fest')
+        / %p
+        /   %em
+        /     = t('dynamic_translations.ff_apply.process_4_fest_dates')
+        /   %br
+        /   = t('dynamic_translations.ff_apply.process_4_fest_desc') 
+
+
+.timeline
+  %iframe{:frameborder => "0", :height => "650", :width => "100%", :src => "//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1iX9dHAoxNXIRgQdiK6aCwfxUhv5f2vLOgdaW9YtwCm8&font=Default&lang=en&initial_zoom=2&height=650" }
+
+/ .blank_bg.vspace
+/   .container
+/     .row.justify
+/       .col-md-8.col-md-offset-2
+/         %p.centered.join_bouton
+/           %a{:href => 'https://ouisharefest.typeform.com/to/s8ouC5', :target => '_blank'}
+/             %button.btn.btn-padding.btn-fandango
+/               = t('dynamic_translations.ff.btn_apply')
+
+.blank_bg#_jury
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.ff_jury.title')
+      %hr.pink
+    .row.centered
+      .col-md-8.col-md-offset-2
+        %p
+          = t('dynamic_translations.ff_jury.p1a') 
+          %a{:href => 'http://ouishare.net/about/team', :target => '_blank'}
+            = t('dynamic_translations.ff_jury.p1a_connectors')
+          / %br
+          / = t('dynamic_translations.ff_jury.p1b')
+        %p
+          = t('dynamic_translations.ff_jury.p2')
+    .row.centered
+      - if !@jury.blank?
+        .ch-grid
+          - @jury.each do |team_member|
+            .col-lg-3.individuals-list-display
+              %li
+                = render "/individuals/partials/team_member_display", :team_member => team_member          
+
+
+.triangle_bg_4.vspace.white_txt#_experience
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.ff_experience.title')
+      %hr.pink
+    .row.justified
+      .col-md-8.col-md-offset-2
+        %br
+        %p
+          = t('dynamic_translations.ff_experience.text') 
+
+.blank_bg#_vote
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.ff_vote.title')
+      %hr.pink
+    .row.centered
+      .col-md-8.col-md-offset-2
+        %br
+        / %p
+        /   %b.caps
+        /     = t('dynamic_translations.ff_vote.jury_selected')
+        /   %a{:href => 'http://lowtechlab.org/', :target => '_blank'}
+        /     The Low Tech Lab
+        /   %br
+        /   %p
+        /     = t('dynamic_translations.ff_vote.lowtechlab_desc')
+        / %p
+        /   %b.caps
+        /     = t('dynamic_translations.ff_vote.now_we_invite')
+        %h5
+          %span.tagline
+            / = t('dynamic_translations.ff_vote.open_soon')
+            / = t('dynamic_translations.ff_vote.vote_now')
+            / = t('dynamic_translations.ff_vote.vote_favourites')
+            = t('dynamic_translations.ff_vote.thank_you')
+        %br
+    .row.centered
+      .col-md-10.col-md-offset-1
+        %iframe{:frameborder => "0", :height => "1200", :width => "100%", :src => "http://www.tricider.com/embed/?show=2n3c1oHiVbB", :scrolling => "no", :marginheight => "0", :marginwidth => "0"}
+        %br
+        %br
+
+
+

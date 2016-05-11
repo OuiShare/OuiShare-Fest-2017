@@ -1,0 +1,687 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.nopadding {
+  padding-bottom: 0px !important;
+}
+.tooltip-inner{
+  font-size: 11px;
+  line-height: 1.4;
+  max-width: 400px;
+  padding: 8px;
+  width: 320px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: 'Ubuntu','Helvetica Neue','Helvetica','Arial','sans-serif';
+}
+
+.tooltip-arrow{
+  border-right-color: #000 !important;
+}
+
+.follow-event-button{
+  background-color: #d5544b;
+}
+
+#btn_attendees_up{
+  display: none;
+}
+.parnters-bg{
+  padding-top: 100px;
+}
+.downpage{
+  .downpage-icon{
+    margin-top: 20px;
+  }
+  .downpage-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lato';
+  }
+}
+.main-section{
+  #headerwrap{
+    padding-top: 55px;
+  }
+}
+#head_logo img{
+  height:250px;
+  margin-top:5%;
+}
+#head_logo_edges img {
+  width: 520px;
+  margin-top: 5%;
+}
+.main-section {
+  h4, h5, h6 {
+    margin-top: 1.1em;
+  }
+}
+.speakers-container{
+  .container.sinfo{
+    padding-top: 31px;
+  }
+}
+.get-involved-section{
+  .get-involved-punchline{
+    background-color: white;
+    color: #FF7777;
+    padding-top: 1px;
+  }
+}
+.button-call-to-action-option{
+  border-radius: 10px !important;
+}
+.events-section{
+  .events-container{
+    border-bottom: 1px solid #f9f9f9;
+    background: rgba(0, 0, 0, 0.15);
+    height: 85px;
+  }
+  .events-items {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 18px;
+    text-align: left;
+    height: 40px;
+    color: #34495e;
+    padding-top: 10px;
+    a{
+      color: #34495e;
+    }
+    li {
+      color: #34495e;
+    }
+  }
+}
+
+.event-block {
+  a {
+    color: #E03E52;
+  }
+  p {
+    color: #001E60;
+  }
+}
+
+.event-block:hover {
+  a {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+#_events > div.container.events-section > div > div > a > div > div {
+  border-top: 2px solid #E03E52;
+  min-height: 143px;
+}
+
+#_events > div.container.events-section > div > div > a > div > div:hover {
+  background-color: #E03E52;
+  h6 {
+    color: white;
+  }
+}
+
+.tickets-section{
+  .tickets-font-color{
+    color: #c5c5c5;
+  }
+  .gravatar-display{
+    width: 50px;
+  }
+  .who-s-coming-title{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .attendee-container{
+    border-bottom: 1px solid #f9f9f9;
+    // background: rgba(0, 0, 0, 0.15);
+    height: 70px;
+  }
+  .attendee-container:hover{
+    // background: rgba(0, 0, 0, 0.5);
+    background: rgba(245, 108, 108, 0.5);
+    color: #fff;
+  }
+  .attendee-items{
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-align: left;
+    height: 40px;
+    // color: #fff;
+    padding-top: 10px;
+  }
+
+}
+.section{
+  padding-top: 130px;
+}
+.partners-container{
+  .logo-centered{
+    position: relative;
+    top: 25%;
+  }
+}
+.get-involved-section{
+  .get-involved-options-choice{
+    li{
+      min-height: 90px;
+    }
+  }
+}
+
+.travel_information {
+  margin-top: 20px;
+  h4{
+    // color: #f56c6c;
+    text-transform: uppercase;
+    font-family: "naiv_normal";
+  }
+}
+
+.individuals-list-display{
+  /*min-height: 335px;*/
+  padding-bottom: 3em;
+  vertical-align: top;
+}
+
+/* optimal float settings for individuals lists */
+.individuals-list-display, .partners, .home_partners, .main_partners {
+  display: inline-block;
+  margin-left: -0.125em;
+  margin-right: -0.125em;
+  float: none;
+}
+
+.individuals-list-btn{
+  position: relative;
+  top: 20px;
+}
+.design-team-footer{
+  position: relative;
+  top: -21px;
+  left: 1px;
+}
+
+
+.container{
+  .main-section{
+    .main-title{
+      font-size: 39px;
+      // font-family: 'naiv_normal_thin';
+      font-family: 'naiv_normal';
+      text-transform: uppercase;
+      // color: #f56c6c;
+    }
+    .form-control{
+      color:#fff;
+    }
+    .main-section-paragraphes{
+      font-size:20px;
+      font-family: 'naiv_normal_thin';
+      margin-top: 10px;
+      margin-bottom: 1.5em;
+    }
+    .twitter-hashtag{
+      color: #fff;
+    }
+  }
+}
+
+.join_bouton {
+  padding:0.5em 0;
+}
+.main-section {
+  min-height: 100%;
+}
+.second-section {
+  // min-height: 100%;
+  padding-top: 7%;
+  padding-bottom: 2%;
+  text-align: left;
+}
+.third-section {
+  min-height: 100%;
+  text-align: left;
+  padding-top: 5%;
+}
+.tickets {
+  /*background: url(/assets/fest2.png);*/
+  /*background: url(/assets/16bg-bluetext.png);*/
+  /*background-size: cover;*/
+  /*margin-top: -12%;*/
+  /*padding-top: 18%;*/
+}
+
+
+.get-involved-section {
+  // min-height: 100%;
+}
+
+.third-section > div > div > div > div > h5 {
+  /*color: #001e60;*/
+  font-size: 16px;
+  padding: 1.3em 0 0.8em;
+}
+
+.first-part {
+  background: url(/assets/16bg-header.png) no-repeat;
+  /*background: url(/assets/fest1.png) no-repeat;*/
+  /*background-color: #33FF99; */
+  margin-top: 0px;
+  padding-top:5%;
+  padding-bottom: 4%;
+  text-align:center;
+  /*background-position: bottom;*/
+}
+
+.program-part {
+  // background: url(/assets/background/background-base.png) no-repeat;
+  // min-height: 100%;
+  margin-top: 0px;
+  padding-top:10%;
+  padding-bottom: 4%;
+  text-align:center;
+  background-position: 0% 0%;
+  background-size: 100% 100% !important;
+}
+
+.tracks-block {
+  border-top: 2px solid #f56c6c;
+  background: none;
+  min-height: 160px;
+  margin: 0px;
+  padding: 10px;
+
+  h6 {
+    font-size: 22px;
+    margin: 10px 0px 0px 7px;
+    text-align: left;
+    color:#f56c6c;
+
+    // :hover {
+    //   color:#FFF;
+    // }
+  }
+
+  p {
+    font-weight: 200;
+    text-align: left;
+    margin: 8px;
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 12px;
+
+    // :hover{
+    //   color:#FFF;
+    // }
+  }
+}
+
+.tracks-block:hover {
+  background-color: #f56c6c;
+
+  h6, p {
+    color:#FFF;
+  }
+}
+
+
+.tickets-section > div:nth-child(1) {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+.third-section {
+  padding-bottom: 15%;
+}
+
+.get-involved-section > div {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+div.container:nth-child(11) > div:nth-child(1) {
+  padding-top: 7%;
+}
+
+div.alt > div > div > div > a {
+  background-color: #f56c6c;
+}
+
+a.btn:nth-child(3) {
+  background-color: #f56c6c;
+}
+
+.aboutouishare-section {
+  padding-top: 12%;
+  padding-bottom: 18%;
+}
+
+.aboutouishare-section > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) {
+  padding-top: 30px;
+}
+
+div.col-xs-6:nth-child(2) {
+  // padding-top: 50px;
+}
+
+.space_background {
+  min-height: 4%;
+}
+
+.col-md-12 > div:nth-child(1) {
+  color: #E03E51 ;
+}
+
+div.centered:nth-child(2) {
+  /*padding-top: 7%;*/
+  /*padding-bottom: 7%;*/
+}
+
+div.row:nth-child(11) {
+  /*padding-top: 5%;*/
+}
+
+div.alt > div:nth-child(2) {
+  padding-top: 5%;
+}
+
+div.alt > div:nth-child(1) {
+  padding-top: 10%;
+}
+
+.tickets-section > div:nth-child(1) > div:nth-child(4) {
+  text-align: left;
+}
+
+p.col-xs-6:nth-child(2) {
+  padding-bottom: 7%;
+}
+
+p.centered:nth-child(4) > a:nth-child(2) > button:nth-child(1) {
+  margin-bottom: 15px;
+}
+
+// hr {
+//   border-width: 4px;
+//   width: 120px;
+//   background-color: black;
+// }
+
+#_tracks > div > div:nth-child(2) > div > div > div > p {
+  color: #34495e;
+}
+
+hr.white {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+  border: 0;
+  border-top: 4px solid #fff;
+}
+
+hr.pink {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+  border: 0;
+  border-top: 4px solid #001E60;
+  // border-top: 4px solid #f56c6c;
+  // border-top: 4px solid #E03E52;
+}
+
+hr.blue {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+  border: 0;
+  border-top: 4px solid #001E60;
+}
+
+p.col-xs-6:nth-child(1) {
+  text-align: left;
+}
+
+p.col-xs-6:nth-child(2) {
+  text-align: left;
+}
+
+.aboutouishare-section > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  padding-top: 5%;
+}
+
+.third-section > div:nth-child(1) > hr:nth-child(2) {
+  // border-color: white -moz-use-text-color -moz-use-text-color;
+}
+
+#speakers > div:nth-child(1) > div:nth-child(1) > hr:nth-child(2) {
+  border-color: #E03E51 -moz-use-text-color -moz-use-text-color;
+}
+
+.tickets-section > div:nth-child(1) > hr:nth-child(2) {
+  border-color: white -moz-use-text-color -moz-use-text-color;
+}
+
+.sinfo > div:nth-child(1) > hr:nth-child(3) {
+  border-color: white -moz-use-text-color -moz-use-text-color;
+}
+
+.sinfo > div:nth-child(1) > hr:nth-child(3) {
+  border-color: #E03E51 -moz-use-text-color -moz-use-text-color;
+}
+
+div.row:nth-child(10) > hr:nth-child(3) {
+  border-color: #E03E51 -moz-use-text-color -moz-use-text-color;
+}
+
+.get-involved-section > div:nth-child(1) > div:nth-child(1) > hr:nth-child(2) {
+  border-color: #E03E51 -moz-use-text-color -moz-use-text-color;
+}
+
+.aboutouishare-section > div:nth-child(1) > div:nth-child(1) > hr:nth-child(2) {
+  // border-color: #001E60 -moz-use-text-color -moz-use-text-color;
+}
+
+div.col-xs-4:nth-child(1) {
+  // padding-bottom: 20px;
+}
+
+p.col-xs-6 a {
+  color: #001E60;
+}
+
+.btn {
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+#head_logo > img {
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+}
+
+#speakers > h6 {
+  color: #001E60;
+}
+
+.conatiner a {
+  text-decoration: underline;
+}
+
+body > div.navbar.navbar-default.navbar-fixed-top > div > div.navbar-collapse.collapse > ul > li > a:hover {
+  background-color: white;
+  color: #001E60;
+}
+
+body > div.navbar.navbar-default.navbar-fixed-top > div > div.navbar-collapse.collapse > ul > li.tickets-highlight.dropdown > a {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 12px;
+}
+
+body > div.navbar.navbar-default.navbar-fixed-top > div {
+/*   width: 985px; */
+}
+
+.ch-grid > div > li > h6 > small > a {
+  text-decoration: none;
+  color: #001E60;
+}
+
+button.mt_20:hover {
+  background-color: white;
+  color: #001E60;
+}
+
+p.col-xs-6 > a:nth-child(1) {
+  text-decoration: underline;
+  color: white;
+}
+
+p.col-xs-6 > a:hover {
+  color: #001E60;
+}
+
+.aboutouishare-section > div:nth-child(1) > div:nth-child(1) > h3:nth-child(1) {
+  // color: #001E60;
+}
+
+// mobile
+body > div.get-involved-section > div > div.centered.get-involved-options-choice > div > div > div.col-md-4 {
+  margin-bottom: 7%;
+}
+
+body > div.get-involved-section > div > div.centered.get-involved-options-choice > div > div > div > div.button > a {
+  // background-color: #E03E51;
+  font-family: 'naiv_normal';
+  padding: 10px 15px;
+  // padding: 19px 30px;
+  text-transform: uppercase;
+  border-radius: 3px !important;
+  font-size: 12px;
+}
+
+body > div.get-involved-section > div > div.centered.get-involved-options-choice > div > div > div > div.title {
+  // min-height: 90px;
+  min-height: 60px;
+  color: #f56c6c;
+  text-transform: uppercase;
+  // font-family: 'naiv_normal';
+}
+
+body > div.get-involved-section > div > div.row.centered > p {
+  padding: 22px 26%;
+  // text-align: left;
+}
+
+.btn.btn-pink.become-partner-btn{
+  background-color: #fff;
+  font-size: 18px;
+  padding: 30px 50px;
+  margin: 40px 0px 0px 0px;
+
+  a{
+    color: #001E60;
+  }
+}
+
+.btn.btn-pink.become-partner-btn:hover{
+  background-color: #001E60;
+  font-size: 18px;
+  padding: 30px 50px;
+  margin: 40px 10px 0px 0px;
+
+  a{
+    color: #fff;
+  }
+}
+
+.btn.get-involved-btn{
+  // padding: 25px 0px;
+  // padding: 25px 10px;
+  width: 180px;
+  height: 100px;
+  white-space: normal;
+}
+
+.btn.btn-pink.buy-tickets-btn{
+  padding: 30px 30px;
+  width: 270px;
+}
+.btn.btn-padding {
+  padding: 20px 30px;
+  margin: 2em;
+}
+
+.btn-purple, .btn-violet, .btn-fandango {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: naiv_normal;
+
+  :hover{
+    background-color: #fff;
+    color: #001E60;
+  }
+}
+.btn-purple {
+  background-color: #990229;
+}
+.btn-violet {
+  // background-color: #9b15f1;
+  background-color: #9B15EA;
+}
+.btn-fandango{
+  // background-color: #9a096f;
+  // background-color: #9a0974;
+  background-color: rgb(154, 12, 141);
+}
+.btn.btn-violet:hover, .btn.btn-purple:hover, .btn.btn-fandango:hover {
+  background-color: #fff;
+  color: #001E60;
+  a{
+    color: #001E60;
+  }
+}
+
+.ch-item{
+  .ch-info{
+     a{
+      text-decoration: none;
+    }
+  }
+}
+
+#slider-container{
+  padding-top: 130px;
+}
+
+.ouishare-news-section{
+  padding-bottom: 10%;
+}
+
+#news img, .news img {
+  width:100%;
+  height: 200px;
+}
+
+h3, h4, h5, h6 {
+  font-family: "naiv_normal";
+  text-transform: uppercase;
+}
+
+.normal {
+  text-transform: none;
+}

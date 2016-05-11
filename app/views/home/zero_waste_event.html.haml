@@ -1,0 +1,123 @@
+.blank_bg.page.top_red
+  .container
+    .row.centered.travel_information
+      %h3.ouishare_stencil
+        = t('dynamic_translations.zerowaste.title')
+      %hr.pink
+
+    .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+      .row.travel_information
+        %p.text-center
+          %b
+            = t('dynamic_translations.zerowaste.descr')
+
+      .row.travel_information
+        %h4
+          = t('dynamic_translations.zerowaste_what.title')
+        %p.text-center
+          = t('dynamic_translations.zerowaste_what.text1')
+        %p.text-center
+          = t('dynamic_translations.zerowaste_what.text2')
+
+      .row.travel_information
+        %h4
+          = t('dynamic_translations.zerowaste_why.title')
+        %p.text-center
+          = t('dynamic_translations.zerowaste_why.text1')
+        %p.text-center
+          = t('dynamic_translations.zerowaste_why.text2')
+
+      .row.travel_information
+        %h4
+          = t('dynamic_translations.zerowaste_examples.title')
+        %p.text-center
+          %b
+            = t('dynamic_translations.zerowaste_examples.toilets')
+          %br
+          = t('dynamic_translations.zerowaste_examples.toilets_text')
+        %p.text-center
+          %b
+            = t('dynamic_translations.zerowaste_examples.3_subtitle')
+          %br
+          %a{href: "http://ouishare.net/projects/ouikit", target: "_blank"}
+            Ouikit
+          = t('dynamic_translations.zerowaste_examples.3_text')
+        %p.text-center
+          %b
+            = t('dynamic_translations.zerowaste_examples.leftovers')
+          %br
+          = t('dynamic_translations.zerowaste_examples.leftovers_text')
+          %a{href: "http://www.nowherekitchen.com/", target: "_blank"}
+            = t('dynamic_translations.zerowaste_examples.leftovers_nowhere')
+        %p.text-center
+          %b
+            = t('dynamic_translations.zerowaste_examples.banners')
+          %br
+          = t('dynamic_translations.zerowaste_examples.banners_text')
+        %p.text-center
+          %b
+            = t('dynamic_translations.zerowaste_examples.plastic')
+          %br
+          %a{href: "http://preciousplastic.com/en/", target: "_blank"}
+            = t('dynamic_translations.zerowaste_examples.plastic_precious')
+          = t('dynamic_translations.zerowaste_examples.plastic_text')
+        %p.text-center
+          %b
+            = t('dynamic_translations.zerowaste_examples.zwetk')
+          %br
+          %a{href: "https://www.zerowastefrance.org/fr", target: "_blank"}
+            = t('dynamic_translations.zerowaste_examples.zwetk_text')
+          %br
+          = t('dynamic_translations.zerowaste_examples.zwetk_text2')
+
+        %p.text-center
+          %b
+            = t('dynamic_translations.zerowaste_examples.stakeholder')
+          %br
+          = t('dynamic_translations.zerowaste_examples.stakeholder_text')
+
+      .row.travel_information
+        %h4
+          = t('dynamic_translations.zerowaste_help.title')
+        %p.text-center
+          = t('dynamic_translations.zerowaste_help.text')
+          %a{href: "mailto:flore@ouishare.net"}
+            = t('dynamic_translations.zerowaste_help.contact')
+
+      .row.centered{:style => "margin-top: 20px;"}
+        %p
+          %b
+            = t('dynamic_translations.zerowaste_more.text')
+        %p
+          %a{href: "https://drive.google.com/drive/u/0/folders/0BwhQglW8Td0Bc0pQUE9LRVZPYWM", target: "_blank", :style => 'text-decoration:none;'}
+            .btn.btn-pink.buy-tickets-btn
+              = t('dynamic_translations.zerowaste_more.btn')
+
+      / .row.centered{:style => "margin-top: 20px;"}
+      /   .col-md-12
+      /     %img{:src => '/assets/logos-zwevent.png', :alt => 'zero waste partners', :style => 'max-height:200px;'}
+.partners-container#zerowaste-partners
+  .container.sinfo
+    - if !@zerowaste.blank?
+      .row.centered
+        .partners
+      = render "/individuals/partials/partners_display", :partners => @zerowaste, :important_partners_display => false
+
+/ Join section
+.blank_bg.vspace
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.join.ready')
+    .row.centered
+      .col-md-6.col-md-offset-3
+        %br
+        %br
+        %p.centered
+          %img.img-responsive{alt: "Ready to join?", src: "assets/osf16-join.jpg"}/
+    .row.centered.btn-space
+      .col-md-12
+        .col-md-6.col-md-offset-3
+          %a{:href => 'join#eventbrite'}
+            %button.btn.btn-large.btn-primary
+              = t('dynamic_translations.reminder_ticket.getyourtickets')

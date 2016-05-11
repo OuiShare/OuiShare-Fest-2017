@@ -1,0 +1,34 @@
+%br
+.container.admin-container
+  .row
+    .col-md-3
+      = render '/admin/partial/menu', :active => 'traductions'
+    .col-md-9    
+      %strong
+        = link_to new_traduction_path do
+          %i.glyphicon.glyphicon-plus-sign
+          Create a new translation key
+      %hr/
+      -@traduction_keys.each do |translation|    
+        %p
+          - trans_id = Translation.find_by_key(translation.key)
+        %table.table
+          %thead
+            %th.text-center
+              %code
+                = translation.key
+            %th
+              %i.glyphicon.glyphicon-edit
+              = link_to "Edit", edit_traduction_path(trans_id)
+              &nbsp;
+              %i.glyphicon.glyphicon-remove
+              = link_to "Delete", traduction_path(trans_id), "data-method" => :delete, :confirm => "Are you sure?"
+          %tbody
+            -Translation.where(:key => translation.key).where(:locale => 'en').each do |translation|
+              %tr
+                %td.col-md-2.text-center
+                  = image_tag "/assets/flags_test/" + translation.locale + ".png", :width => "32px"
+                  %span.badge
+                    = translation.locale
+                %td
+                  = translation.value
