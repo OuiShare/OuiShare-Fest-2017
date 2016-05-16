@@ -1,175 +1,4 @@
-.tickets.triangle_bg_tickets.white_txt#_tickets{:style => "padding-top:120px;"}
-  .container
-    .row.centered
-      .col-md-10.col-md-offset-1.col-sm-12
-        %h3.ouishare_stencil.centered
-          = t('dynamic_translations.tickets.title')
-        %hr.pink
-        %br
-        %br
-        %p
-          = t('dynamic_translations.tickets.description1')
-          %a{href: "/join#_getinvolved"}
-            = t('dynamic_translations.tickets.get_involved')
-        .tickets-table
-          .row
-            .col-md-2.col-md-offset-6.col-xs-4.col-xs-offset-0.title-blue
-              = t('dynamic_translations.tickets_table.pioneers')
-            .col-md-2.col-xs-4.title-blue
-              = t('dynamic_translations.tickets_table.explorers')
-            .col-md-2.col-xs-4.title-blue
-              = t('dynamic_translations.tickets_table.hackers')
-          .tickets-border
-            .row.title-inverse
-              .col-md-6.col-sm-12.title-inverse
-                %span{:style => "padding:2em auto;"}
-                  = t('dynamic_translations.tickets_table.core_features')
-              .col-md-2.col-xs-4.title-inverse
-                = t('dynamic_translations.tickets_price.pioneers_3d')
-                %br
-                %br
-                = t('dynamic_translations.tickets_price.pioneers_1d')
-              .col-md-2.col-xs-4.title-inverse
-                = t('dynamic_translations.tickets_price.explorers_3d')
-                %br
-                %br
-                = t('dynamic_translations.tickets_price.explorers_1d')
-              .col-md-2.col-xs-4.title-inverse
-                = t('dynamic_translations.tickets_price.hackers_3d')
-                %br
-                %br
-                = t('dynamic_translations.tickets_price.hackers_1d')
-            .row
-              .col-md-6.col-sm-12
-                = t('dynamic_translations.tickets_table.core_1_access')
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.core_2_food')
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.core_3_partner_events')
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.core_4_access_party')
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.core_5_participants_list')
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-            .row
-              .col-md-12.title-inverse{:style => "padding:none;"}
-                = t('dynamic_translations.tickets_table.extended_features')
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.ext_3_webinar')
-              .col-md-2.col-xs-4
-                &nbsp;
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                &nbsp;
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.ext_1_reception')
-              .col-md-2.col-xs-4
-                &nbsp;
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                &nbsp;
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.ext_welcoming') 
-              .col-md-2.col-xs-4
-                &nbsp;
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                &nbsp;
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.ext_matchmaking')
-              .col-md-2.col-xs-4
-                &nbsp;
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                &nbsp;
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.ext_advice')
-              .col-md-2.col-xs-4
-                &nbsp;
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                &nbsp;
-            .row
-              .col-md-6
-                = t('dynamic_translations.tickets_table.ext_4_book') 
-                %em
-                  = t('dynamic_translations.tickets_table.ext_4_book_title')
-              .col-md-2.col-xs-4
-                &nbsp;
-              .col-md-2.col-xs-4
-                = image_tag "/assets/tickets-tick-white.svg"
-              .col-md-2.col-xs-4
-                &nbsp;
-          %p.left
-            = t('dynamic_translations.tickets_table.questions') 
-            %b
-              %a{:href => 'mailto:partners@ouisharefest.com'}
-                partners@ouisharefest.com
-        / %br
-        / %p.text-center
-        /   = image_tag("2016-tickets-#{I18n.locale}-05.png", width: "100%", alt: "Ticket options")
-        %br
-        %br
-        / Eventbrite form
-        %div#eventbrite{:style => "width:100%; text-align:left; padding: 0 1.6em;"}
-          %iframe{:allowtransparency => "true", :frameborder => "0", :height => "640", :hspace => "0", :marginheight => "5", :marginwidth => "5", :scrolling => "auto", :src => "http://www.eventbrite.com/tickets-external?eid=19202830182&ref=etckt&v=2", :vspace => "0", :width => "100%"}
-          %div{:style => "font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;"}
-            %a{:href => "http://www.eventbrite.com/r/etckt", :style => "color:#ddd; text-decoration:none;", :target => "_blank"} 
-              =t('dynamic_translations.tickets.event_registration_online')
-            %span{:style => "color:#ddd;"} 
-              =t('dynamic_translations.tickets.for')
-            %a{:href => "https://www.eventbrite.com/e/ouishare-fest-paris-2016-tickets-19202830182?aff=eac2", :style => "color:#ddd; text-decoration:none;", :target => "_blank"} OuiShare Fest 2016
-            %span{:style => "color:#ddd;"} 
-              =t('dynamic_translations.tickets.powered_by')
-            %a{:href => "http://www.eventbrite.com?ref=etckt", :style => "color:#ddd; text-decoration:none;", :target => "_blank"} Eventbrite
-
-
-/ Get Involved
-
-.get-involved-section#_getinvolved
+.get-involved-section.vspace#_getinvolved
   .container
     .row.centered
       %h3.ouishare_stencil
@@ -183,25 +12,25 @@
     .centered.get-involved-options-choice
       .span-centered
         .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
-          / .col-md-4.col-md-offset-2
-          .col-md-4
-            .title
-              =t('dynamic_translations.get_involved.program_call_txt')
-            / %a{href: "https://ouisharefest.typeform.com/to/TTSxdV", target: "_blank"}
-            %button.btn.btn-embossed.btn-primary.get-involved-btn
-              =t('dynamic_translations.get_involved.program_call_btn')
-          .col-md-4
-            .title
-              = t('dynamic_translations.get_involved.volunteers_join_txt')
-            %a{href: "http://goo.gl/forms/E6WNmnFKs7", :target => "_blank"}
-              %button.btn.btn-embossed.btn-primary.get-involved-btn
-                =t('dynamic_translations.get_involved.volunteers_apply_btn')
+          .col-md-4.col-md-offset-2
+          / .col-md-4
+          /   .title
+          /     =t('dynamic_translations.get_involved.program_call_txt')
+          /   / %a{href: "https://ouisharefest.typeform.com/to/TTSxdV", target: "_blank"}
+          /   %button.btn.btn-embossed.btn-primary.get-involved-btn
+          /     =t('dynamic_translations.get_involved.program_call_btn')
           / .col-md-4
           /   .title
           /     = t('dynamic_translations.get_involved.volunteers_join_txt')
-          /   %a{href: "mailto:volunteers@ouisharefest.com", :target => "_blank"}
+          /   %a{href: "http://goo.gl/forms/E6WNmnFKs7", :target => "_blank"}
           /     %button.btn.btn-embossed.btn-primary.get-involved-btn
-          /       =t('dynamic_translations.get_involved.volunteers_join_btn')
+          /       =t('dynamic_translations.get_involved.volunteers_apply_btn')
+          / .col-md-4
+            .title
+              = t('dynamic_translations.get_involved.volunteers_join_txt')
+            %a{href: "mailto:volunteers@ouisharefest.com", :target => "_blank"}
+              %button.btn.btn-embossed.btn-primary.get-involved-btn
+                =t('dynamic_translations.get_involved.volunteers_join_btn')
           / .col-md-4
           /   .title
           /     =t('dynamic_translations.get_involved.awards_apply_txt')
@@ -222,15 +51,15 @@
                 = t('dynamic_translations.get_involved.partners_btn')
 
 
-/ Become a partner
-.become_partner
-  .container 
-    .row.centered
-      .col-md-4.col-md-offset-4.col-sm-12
-        .btn.btn-pink.become-partner-btn
-          %a{:href => 'mailto:partners@ouisharefest.com'}
-            / Become a partner
-            = t('dynamic_translations.get_involved.partners_txt')
+/ / Become a partner
+/ .become_partner
+/   .container 
+/     .row.centered
+/       .col-md-4.col-md-offset-4.col-sm-12
+/         .btn.btn-pink.become-partner-btn
+/           %a{:href => 'mailto:partners@ouisharefest.com'}
+/             / Become a partner
+/             = t('dynamic_translations.get_involved.partners_txt')
 
 
 / Press-media tickets
