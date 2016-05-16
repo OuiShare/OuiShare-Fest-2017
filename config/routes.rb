@@ -62,8 +62,7 @@ OuiShareFest::Application.routes.draw do
     # get :fabl
     # get :forward
     # get :freelancers
-    get :getting_to_the_venue
- 
+    get :getting_to_the_venue 
     get :join
     # get :loveparty
     get :media
