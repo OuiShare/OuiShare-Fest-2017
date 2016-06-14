@@ -38,54 +38,6 @@
             %button.btn.btn-large.btn-primary
               = t('dynamic_translations.news.see_all')
 
-/ Videos from 2016
-.blank_bg#bestof
-  .container
-    .row.centered
-      %h3.ouishare_stencil
-        = t('dynamic_translations.video.section_title')
-      %hr.pink
-    .row{style:"padding-top: 3%"}
-      .col-md-4
-        .col-md-12
-          %img{src:"http://placehold.it/16x9"}
-          %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/F95M6_4TzhQ"}
-        .col-md-12
-          %br
-          %p
-            %a{href: "http://youtu.be/F95M6_4TzhQ", :target => "_blank"}
-              Be Warned: Copy Silicon Valley and You Will Surely Fail
-            %br
-            Nilofer Merchant
-      .col-md-4
-        .col-md-12
-          %img{src:"http://placehold.it/16x9"}
-          %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/vmrGqzl96L8"}
-        .col-md-12
-          %br
-          %p
-            %a{href: "http://youtu.be/vmrGqzl96L8", :target => "_blank"}
-              Closing Remarks OuiShare Fest 2016
-            %br
-            Yochai Benkler (Harvard University)
-      .col-md-4
-        .col-md-12
-          %img{src:"http://placehold.it/16x9"}
-          %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/K54rB2Qu_sQ"}
-        .col-md-12
-          %br
-          %p
-            %a{href: "http://youtu.be/K54rB2Qu_sQ", :target => "_blank"}
-              Platform Cooperatives and Beyond: The Future of Collaborative Governance? 
-            / %br
-            / ...
-    .row.centered.btn-space
-      .col-md-12
-        .col-md-6.col-md-offset-3
-          %a{href: "https://www.youtube.com/playlist?list=PL8Bt3EbdmpKOKPy57wesfC7SlWXBjYW6c", :target => "_blank", :style => "width: 170px;"}
-            %button.btn.btn-large.btn-primary
-              = t('dynamic_translations.video.see_all')
-
 .blank_bg#bestof
   .container
     = render '/home/partials/videos'
