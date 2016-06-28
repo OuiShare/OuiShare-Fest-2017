@@ -1,4 +1,5 @@
-.photo_bg
+#container.container-fluid.triangles
+  #output.triangles
   .container
     .main-section
       .row
@@ -11,8 +12,7 @@
         .col-md-6.col-md-offset-3
           %br
           %h5.normal.white
-            %span.vert-borders
-              = t('dynamic_translations.fest.thank_you')
+            = t('dynamic_translations.fest.thank_you')
           %br
           %br
 
@@ -22,6 +22,9 @@
             = text_field_tag :email_address,"", :class => "form-control flat", :placeholder => t('dynamic_translations.main.placeholder_stay_posted'), :style => "width: 110%;"
           .col-md-2.submit-email-button
             = submit_tag t('dynamic_translations.main.stay_posted'), :class => "btn btn-primary"
+
+#controls.controls
+= javascript_include_tag 'triangles'
 
 / About the Fest
 .blank_bg
@@ -48,43 +51,11 @@
 
 .blank_bg.vspace#news
   .container
-    .row.centered
-      %h3.ouishare_stencil
-        = t('dynamic_translations.ouishare-news.title')
-      %hr.pink
-    .row{style:"padding-top: 3%"}
+    = render '/home/partials/news'
 
-      - @magazines.each do |magazine|
-        .col-md-4{style:"position: relative; min-height:170px;"}
-          - if !magazine.content.split('img')[1].nil?
-            .col-md-12
-              %a{href: "#{magazine.url}", target:"blank"}
-                %img{:src => "#{magazine.content.split(' ')[3].split('"')[1].gsub(/-150x150/, "")}", :u => "image"}
-              .col-md-12
-              %br
-              %p
-                %a{href: "#{magazine.url}", target:"blank"}
-                  = magazine.name 
-                %br
-                  = "#{magazine.author}" unless magazine.author.blank?
-          - else
-            .col-md-12
-              %a{href: "#{magazine.url}", target:"blank"}
-                = image_tag "/assets/landing_logo.png", :style => "height:150px;"
-            .col-md-12
-              %br
-              %p
-                %a{href: "#{magazine.url}", target:"blank"}
-                  = magazine.name
-                %br
-                  = "#{magazine.author}" unless magazine.author.blank?
-            
-    .row.centered.btn-space
-      .col-md-12
-        .col-md-6.col-md-offset-3
-          %a{href: "http://magazine.ouishare.net/tag/ouisharefest/", :target => "_blank", :style => "width: 170px;"}
-            %button.btn.btn-large.btn-primary
-              = t('dynamic_translations.news.see_all')
+.blank_bg#bestof
+  .container
+    = render '/home/partials/videos'
 
 %section#slideshow-container
   .banner
@@ -92,40 +63,40 @@
 
       / slide 1
       %li{"data-transition" => "fade"}
-        %img{alt: "", src: "assets/slider/inspire_2016.jpg", style: "background:#1abc9c"}/
+        %img{alt: "", src: "assets/slider/inspire-2017.jpg"}/
         .caption.general_caption.pst_media12.lft{"data-easing" => "easeOutExpo", "data-end" => "7900", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "600", "data-start" => "800", "data-x" => "58", "data-y" => "250"}
           %h1{:style => "text-shadow: 2px 0px black"}
             Inspire
 
       / slide 2
       %li{"data-transition" => "fade"}
-        %img{alt: "", src: "assets/slider/cocreate_2016.jpg", style: "background:#1abc9c"}/
+        %img{alt: "", src: "assets/slider/collaborate-2017.jpg"}/
         .caption.general_caption.pst_media14.lfl.ltl{"data-easing" => "easeOutBack", "data-end" => "5700", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "900", "data-start" => "100", "data-x" => "56", "data-y" => "250"}
           %h1{:style => "text-shadow: 2px 0px black"}
             Collaborate
 
       / slide 3
       %li{"data-transition" => "fade"}
-        %img{alt: "", src: "assets/slider/connect_2016.jpg", style: "background:#1abc9c"}/
+        %img{alt: "", src: "assets/slider/connect-2017.jpg"}/
         .caption.general_caption.pst_media12.lft{"data-easing" => "easeOutExpo", "data-end" => "7900", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "600", "data-start" => "800", "data-x" => "58", "data-y" => "250"}
           %h1{:style => "text-shadow: 2px 0px black"}
             Connect
 
       / slide 4
       %li{"data-transition" => "fade"}
-        %img{alt: "", src: "assets/slider/new_img5.jpg", style: "background:#e4e6e6"}/
+        %img{alt: "", src: "assets/slider/debate-2017.jpg"}/
         .caption.general_caption.pst_media14.lfl.ltl{"data-easing" => "easeOutBack", "data-end" => "5700", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "900", "data-start" => "100", "data-x" => "56", "data-y" => "250"}
           %h1{:style => "text-shadow: 2px 0px black"}
             Debate
 
       %li{"data-transition" => "fade"}
-        %img{alt: "", src: "assets/slider/create_2016.jpg", style: "background:#1abc9c"}/
+        %img{alt: "", src: "assets/slider/create_2016.jpg"}/
         .caption.general_caption.pst_media12.lft{"data-easing" => "easeOutExpo", "data-end" => "7900", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "600", "data-start" => "800", "data-x" => "58", "data-y" => "250"}
           %h1{:style => "text-shadow: 2px 0px black"}
             Create
 
       %li{"data-transition" => "fade"}
-        %img{alt: "", src: "assets/slider/dance_2015.jpg", style: "background:#1abc9c"}/
+        %img{alt: "", src: "assets/slider/dance-2017.jpg"}/
         .caption.general_caption.pst_media12.lft{"data-easing" => "easeOutExpo", "data-end" => "7900", "data-endeasing" => "easeInBack", "data-endspeed" => "900", "data-speed" => "600", "data-start" => "800", "data-x" => "58", "data-y" => "250"}
           %h1{:style => "text-shadow: 2px 0px black"}
             Dance!

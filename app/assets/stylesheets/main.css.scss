@@ -20,7 +20,7 @@ body {
 
 .panel-default > .panel-heading {
     color: #ffffff;
-    background-color: #1abc9c;
+    /*background-color: #1abc9c;*/
     border-color: #16a085;
 }
 
@@ -41,6 +41,11 @@ body {
     position:relative;
     overflow:hidden;
     padding:0;
+
+    img {
+        background:#001E60;
+
+    }
 }
 
 .banner {

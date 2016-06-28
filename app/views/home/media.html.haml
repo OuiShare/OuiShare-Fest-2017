@@ -38,54 +38,9 @@
             %button.btn.btn-large.btn-primary
               = t('dynamic_translations.news.see_all')
 
-/ Videos from 2015
 .blank_bg#bestof
   .container
-    .row.centered
-      %h3.ouishare_stencil
-        = t('dynamic_translations.video.section_title')
-      %hr.pink
-    .row{style:"padding-top: 3%"}
-      .col-md-4
-        .col-md-12
-          %img{src:"http://placehold.it/16x9"}
-          %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/VkgJ_erCNE8"}
-        .col-md-12
-          %br
-          %p
-            %a{href: "http://youtu.be/VkgJ_erCNE8", :target => "_blank"}
-              / = t('dynamic_translations.video.snapshots')
-              Collaborative Economy
-              %br
-              Jeremiah Owyang
-      .col-md-4
-        .col-md-12
-          %img{src:"http://placehold.it/16x9"}
-          %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/aMJ5ujg-Gsw"}
-        .col-md-12
-          %br
-          %p
-            %a{href: "http://youtu.be/aMJ5ujg-Gsw", :target => "_blank"}
-              Endgame for Jobs, Welcome Flexible Work
-            / %br
-            / Robin Chase
-      .col-md-4
-        .col-md-12
-          %img{src:"http://placehold.it/16x9"}
-          %iframe{allowfullscreen: "", frameborder: "0", src: "//www.youtube.com/embed/1NM4dbzDegQ"}
-        .col-md-12
-          %br
-          %p
-            %a{href: "http://youtu.be/1NM4dbzDegQ", :target => "_blank"}
-              Radical Love: Making and Unmaking Worlds 
-            %br
-            Alexa Clay & David Kyuman Kim
-    .row.centered.btn-space
-      .col-md-12
-        .col-md-6.col-md-offset-3
-          %a{href: "https://www.youtube.com/playlist?list=PL8Bt3EbdmpKM4tYKyERKbp6VMYTjYZwCF", :target => "_blank", :style => "width: 170px;"}
-            %button.btn.btn-large.btn-primary
-              = t('dynamic_translations.video.see_all')
+    = render '/home/partials/videos'
 
 / OuiShare Radio
 .blank_bg#radio{:style => 'padding-top:7%;'}
@@ -131,22 +86,3 @@
                 %button.btn.btn-large.btn-primary
                   = t('dynamic_translations.stories.read')
 
-
-/ Join section
-.blank_bg.vspace
-  .container
-    .row.centered
-      %h3.ouishare_stencil
-        = t('dynamic_translations.join.ready')
-    .row.centered
-      .col-md-6.col-md-offset-3
-        %br
-        %br
-        %p.centered
-          %img.img-responsive{alt: "Ready to join?", src: "assets/osf16-join.jpg"}/
-    .row.centered.btn-space
-      .col-md-12
-        .col-md-6.col-md-offset-3
-          %a{:href => 'join#eventbrite'}
-            %button.btn.btn-large.btn-primary
-              = t('dynamic_translations.reminder_ticket.getyourtickets')
