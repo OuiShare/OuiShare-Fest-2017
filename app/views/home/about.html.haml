@@ -105,6 +105,19 @@
               %p
                 = t('dynamic_translations.topics.body_desc')
 
+/ Stats
+.blank_bg#_stats
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.stats.title')
+      %hr.pink
+      %br
+    .row.centered.btn-space
+      .col-md-6.col-md-offset-3
+        %a{href: "https://drive.google.com/file/d/0B7b2-hkRWIe-ZklGdmhiVXByTVE/view?usp=sharing", :target => "_blank", :style => "width: 170px;"}
+          %button.btn.btn-large.btn-primary
+            = t('dynamic_translations.stats.see_all')
 
 / What the press says
 .blank_bg#_about_press
