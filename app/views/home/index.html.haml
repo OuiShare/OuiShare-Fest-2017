@@ -16,6 +16,13 @@
           %br
           %br
 
+        .row.centered
+          .col-md-8.col-md-offset-2
+            %p.centered.join_bouton
+              %a{:href => 'https://ouishare.gitbooks.io/ouishare-fest-paris-2016-documentation/content/', target: "_blank"}
+                %button.btn.btn-embossed.btn-primary
+                  = t('dynamic_translations.fest.documentation')
+
       = form_tag home_newsletter_collect_email_path, :class => "form-inline" do
         .row.centered
           .col-md-offset-3.col-md-4
