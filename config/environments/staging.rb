@@ -94,9 +94,9 @@ OuiShareFest::Application.configure do
 
   OuiShareFest::Application.config.middleware.use ExceptionNotification::Rack,
   :email => {
-    :email_prefix => "[OuiShareFest ERR] ",
+    :email_prefix => "[OSF17 test ERR] ",
     :sender_address => %{"OuiShare Team" <no-reply@ouisharefest.com>},
-    :exception_recipients => %w{yann@kastelnik.com karol.arnaud@gmail.com auli@haldjas.org}
+    :exception_recipients => %w{auli@haldjas.org}
   }
   
   GA.tracker = ENV["GA_CREDENTIALS"]
